@@ -2,6 +2,8 @@
 platform :ios, '9.0'
 
 def helper_pods
+    pod 'Swinject'
+    pod 'SwinjectStoryboard'
     pod 'R.swift'
 end
 

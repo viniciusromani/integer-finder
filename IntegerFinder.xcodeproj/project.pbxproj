@@ -10,7 +10,6 @@
 		256641BBD0D9CB27F9FC99E6 /* Pods_IntegerFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */; };
 		4DAD292551C2F2BE795EB12F /* Pods_IntegerFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */; };
 		A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */; };
-		A1DD1EE720D18BBE001DFA5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE620D18BBE001DFA5E /* ViewController.swift */; };
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
 		A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */; };
 		A1DD1EEF20D18BBF001DFA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EED20D18BBF001DFA5E /* LaunchScreen.storyboard */; };
@@ -26,6 +25,21 @@
 		A1DD1F2D20D18E45001DFA5E /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2B20D18E45001DFA5E /* HTTPError.swift */; };
 		A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2F20D18E50001DFA5E /* ErrorCatcher.swift */; };
 		A1DD1F3320D18E66001DFA5E /* IntegerFinderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F3220D18E66001DFA5E /* IntegerFinderAPI.swift */; };
+		A1E5D87020D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D86F20D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift */; };
+		A1E5D87520D1A06C002DA442 /* CollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D87420D1A06C002DA442 /* CollectionViewAdapter.swift */; };
+		A1E5D87920D1A0E2002DA442 /* IntegerArrayCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D87820D1A0E2002DA442 /* IntegerArrayCollectionView.swift */; };
+		A1E5D87F20D1A2B3002DA442 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D87E20D1A2B3002DA442 /* R.generated.swift */; };
+		A1E5D88120D1A30C002DA442 /* IntegerArrayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E5D88020D1A30C002DA442 /* IntegerArrayCollectionViewCell.xib */; };
+		A1E5D88320D1A920002DA442 /* IntegerArrayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D88220D1A920002DA442 /* IntegerArrayCollectionViewCell.swift */; };
+		A1E5D88620D1AA3E002DA442 /* IntegerArrayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D88520D1AA3E002DA442 /* IntegerArrayViewModel.swift */; };
+		A1E5D88820D1AC3C002DA442 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D88720D1AC3C002DA442 /* MainScreenViewController.swift */; };
+		A1E5D88A20D1AC4E002DA442 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D88920D1AC4E002DA442 /* MainScreenPresenter.swift */; };
+		A1E5D88C20D1AC5D002DA442 /* MainScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D88B20D1AC5D002DA442 /* MainScreenConfigurator.swift */; };
+		A1E5D88E20D1AC70002DA442 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D88D20D1AC70002DA442 /* MainScreenRouter.swift */; };
+		A1FE0EA820D1B30E003D6ADB /* UseCaseDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EA720D1B30E003D6ADB /* UseCaseDependencyInjection.swift */; };
+		A1FE0EAA20D1B3B1003D6ADB /* RepositoryDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EA920D1B3B1003D6ADB /* RepositoryDependencyInjection.swift */; };
+		A1FE0EAC20D1B593003D6ADB /* SceneDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EAB20D1B593003D6ADB /* SceneDependencyInjection.swift */; };
+		A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EAD20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +62,6 @@
 /* Begin PBXFileReference section */
 		A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegerFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1DD1EE620D18BBE001DFA5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1DD1EE920D18BBE001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1DD1EEE20D18BBF001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +82,21 @@
 		A1DD1F2B20D18E45001DFA5E /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		A1DD1F2F20D18E50001DFA5E /* ErrorCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCatcher.swift; sourceTree = "<group>"; };
 		A1DD1F3220D18E66001DFA5E /* IntegerFinderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerFinderAPI.swift; sourceTree = "<group>"; };
+		A1E5D86F20D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveIntegerArrayUseCase.swift; sourceTree = "<group>"; };
+		A1E5D87420D1A06C002DA442 /* CollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewAdapter.swift; sourceTree = "<group>"; };
+		A1E5D87820D1A0E2002DA442 /* IntegerArrayCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerArrayCollectionView.swift; sourceTree = "<group>"; };
+		A1E5D87E20D1A2B3002DA442 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		A1E5D88020D1A30C002DA442 /* IntegerArrayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntegerArrayCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1E5D88220D1A920002DA442 /* IntegerArrayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerArrayCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1E5D88520D1AA3E002DA442 /* IntegerArrayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerArrayViewModel.swift; sourceTree = "<group>"; };
+		A1E5D88720D1AC3C002DA442 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		A1E5D88920D1AC4E002DA442 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		A1E5D88B20D1AC5D002DA442 /* MainScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenConfigurator.swift; sourceTree = "<group>"; };
+		A1E5D88D20D1AC70002DA442 /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		A1FE0EA720D1B30E003D6ADB /* UseCaseDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseDependencyInjection.swift; sourceTree = "<group>"; };
+		A1FE0EA920D1B3B1003D6ADB /* RepositoryDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDependencyInjection.swift; sourceTree = "<group>"; };
+		A1FE0EAB20D1B593003D6ADB /* SceneDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDependencyInjection.swift; sourceTree = "<group>"; };
+		A1FE0EAD20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
 		B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		C638EE1D4068D80D4A704973 /* Pods-IntegerFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder.release.xcconfig"; sourceTree = "<group>"; };
 		CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,12 +177,11 @@
 		A1DD1EE320D18BBE001DFA5E /* IntegerFinder */ = {
 			isa = PBXGroup;
 			children = (
+				A1E5D88F20D1B1FF002DA442 /* Dependency Injection */,
 				A1DD1F1720D18D2F001DFA5E /* Presentation */,
 				A1DD1F1620D18D27001DFA5E /* Domain */,
 				A1DD1F1520D18D20001DFA5E /* Store */,
 				A1DD1F1220D18CE7001DFA5E /* Support Files */,
-				A1DD1EE620D18BBE001DFA5E /* ViewController.swift */,
-				A1DD1EE820D18BBE001DFA5E /* Main.storyboard */,
 			);
 			path = IntegerFinder;
 			sourceTree = "<group>";
@@ -180,6 +207,7 @@
 		A1DD1F1220D18CE7001DFA5E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1E5D87E20D1A2B3002DA442 /* R.generated.swift */,
 				A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */,
 				A1DD1EED20D18BBF001DFA5E /* LaunchScreen.storyboard */,
 				A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */,
@@ -201,6 +229,7 @@
 		A1DD1F1620D18D27001DFA5E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A1E5D86E20D19F3C002DA442 /* Use Case */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -208,6 +237,8 @@
 		A1DD1F1720D18D2F001DFA5E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A1E5D87320D1A054002DA442 /* Protocol */,
+				A1E5D87220D1A026002DA442 /* Scenes */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -283,6 +314,81 @@
 			path = Endpoint;
 			sourceTree = "<group>";
 		};
+		A1E5D86E20D19F3C002DA442 /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				A1E5D86F20D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		A1E5D87220D1A026002DA442 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1EE820D18BBE001DFA5E /* Main.storyboard */,
+				A1E5D87620D1A0CC002DA442 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A1E5D87320D1A054002DA442 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A1E5D87420D1A06C002DA442 /* CollectionViewAdapter.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A1E5D87620D1A0CC002DA442 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A1E5D88420D1AA2C002DA442 /* ViewModel */,
+				A1E5D87720D1A0D2002DA442 /* CollectionView */,
+				A1E5D88720D1AC3C002DA442 /* MainScreenViewController.swift */,
+				A1E5D88920D1AC4E002DA442 /* MainScreenPresenter.swift */,
+				A1E5D88D20D1AC70002DA442 /* MainScreenRouter.swift */,
+				A1E5D88B20D1AC5D002DA442 /* MainScreenConfigurator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A1E5D87720D1A0D2002DA442 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A1E5D87A20D1A1E0002DA442 /* Cell */,
+				A1E5D87820D1A0E2002DA442 /* IntegerArrayCollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		A1E5D87A20D1A1E0002DA442 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A1E5D88020D1A30C002DA442 /* IntegerArrayCollectionViewCell.xib */,
+				A1E5D88220D1A920002DA442 /* IntegerArrayCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A1E5D88420D1AA2C002DA442 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1E5D88520D1AA3E002DA442 /* IntegerArrayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1E5D88F20D1B1FF002DA442 /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE0EA920D1B3B1003D6ADB /* RepositoryDependencyInjection.swift */,
+				A1FE0EA720D1B30E003D6ADB /* UseCaseDependencyInjection.swift */,
+				A1FE0EAB20D1B593003D6ADB /* SceneDependencyInjection.swift */,
+				A1FE0EAD20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift */,
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +397,7 @@
 			buildConfigurationList = A1DD1F0920D18BBF001DFA5E /* Build configuration list for PBXNativeTarget "IntegerFinder" */;
 			buildPhases = (
 				E6B05F4A48CF84C65527768D /* [CP] Check Pods Manifest.lock */,
+				A1E5D87D20D1A263002DA442 /* ShellScript */,
 				A1DD1EDD20D18BBE001DFA5E /* Sources */,
 				A1DD1EDE20D18BBE001DFA5E /* Frameworks */,
 				A1DD1EDF20D18BBE001DFA5E /* Resources */,
@@ -394,6 +501,7 @@
 				A1DD1EEF20D18BBF001DFA5E /* LaunchScreen.storyboard in Resources */,
 				A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */,
 				A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */,
+				A1E5D88120D1A30C002DA442 /* IntegerArrayCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +552,8 @@
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -452,11 +562,26 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A1E5D87D20D1A263002DA442 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
 		};
 		E6B05F4A48CF84C65527768D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -502,16 +627,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DD1F2320D18D8E001DFA5E /* MappableEntity.swift in Sources */,
+				A1E5D87920D1A0E2002DA442 /* IntegerArrayCollectionView.swift in Sources */,
 				A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */,
+				A1FE0EAA20D1B3B1003D6ADB /* RepositoryDependencyInjection.swift in Sources */,
 				A1DD1F2220D18D8E001DFA5E /* GenericEntityMapper.swift in Sources */,
 				A1DD1F2C20D18E45001DFA5E /* JSONError.swift in Sources */,
+				A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */,
 				A1DD1F2820D18DAC001DFA5E /* NetworkSettings.swift in Sources */,
 				A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */,
+				A1E5D88E20D1AC70002DA442 /* MainScreenRouter.swift in Sources */,
 				A1DD1F1E20D18D76001DFA5E /* MainNetworkRepository.swift in Sources */,
-				A1DD1EE720D18BBE001DFA5E /* ViewController.swift in Sources */,
+				A1E5D88A20D1AC4E002DA442 /* MainScreenPresenter.swift in Sources */,
+				A1E5D87520D1A06C002DA442 /* CollectionViewAdapter.swift in Sources */,
+				A1E5D88820D1AC3C002DA442 /* MainScreenViewController.swift in Sources */,
+				A1FE0EA820D1B30E003D6ADB /* UseCaseDependencyInjection.swift in Sources */,
+				A1E5D88C20D1AC5D002DA442 /* MainScreenConfigurator.swift in Sources */,
 				A1DD1F2620D18D9F001DFA5E /* Int+MappableEntity.swift in Sources */,
+				A1E5D88620D1AA3E002DA442 /* IntegerArrayViewModel.swift in Sources */,
+				A1FE0EAC20D1B593003D6ADB /* SceneDependencyInjection.swift in Sources */,
+				A1E5D87F20D1A2B3002DA442 /* R.generated.swift in Sources */,
+				A1E5D87020D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift in Sources */,
 				A1DD1F3320D18E66001DFA5E /* IntegerFinderAPI.swift in Sources */,
 				A1DD1F2D20D18E45001DFA5E /* HTTPError.swift in Sources */,
+				A1E5D88320D1A920002DA442 /* IntegerArrayCollectionViewCell.swift in Sources */,
 				A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
