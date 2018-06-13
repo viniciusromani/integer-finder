@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256641BBD0D9CB27F9FC99E6 /* Pods_IntegerFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */; };
+		4DAD292551C2F2BE795EB12F /* Pods_IntegerFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */; };
 		A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */; };
 		A1DD1EE720D18BBE001DFA5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE620D18BBE001DFA5E /* ViewController.swift */; };
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
@@ -14,6 +16,16 @@
 		A1DD1EEF20D18BBF001DFA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EED20D18BBF001DFA5E /* LaunchScreen.storyboard */; };
 		A1DD1EFA20D18BBF001DFA5E /* IntegerFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EF920D18BBF001DFA5E /* IntegerFinderTests.swift */; };
 		A1DD1F0520D18BBF001DFA5E /* IntegerFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F0420D18BBF001DFA5E /* IntegerFinderUITests.swift */; };
+		A1DD1F1E20D18D76001DFA5E /* MainNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F1C20D18D76001DFA5E /* MainNetworkRepository.swift */; };
+		A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F1D20D18D76001DFA5E /* MainRepository.swift */; };
+		A1DD1F2220D18D8E001DFA5E /* GenericEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2020D18D8E001DFA5E /* GenericEntityMapper.swift */; };
+		A1DD1F2320D18D8E001DFA5E /* MappableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2120D18D8E001DFA5E /* MappableEntity.swift */; };
+		A1DD1F2620D18D9F001DFA5E /* Int+MappableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2520D18D9F001DFA5E /* Int+MappableEntity.swift */; };
+		A1DD1F2820D18DAC001DFA5E /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2720D18DAC001DFA5E /* NetworkSettings.swift */; };
+		A1DD1F2C20D18E45001DFA5E /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2A20D18E44001DFA5E /* JSONError.swift */; };
+		A1DD1F2D20D18E45001DFA5E /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2B20D18E45001DFA5E /* HTTPError.swift */; };
+		A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2F20D18E50001DFA5E /* ErrorCatcher.swift */; };
+		A1DD1F3320D18E66001DFA5E /* IntegerFinderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F3220D18E66001DFA5E /* IntegerFinderAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,22 @@
 		A1DD1F0020D18BBF001DFA5E /* IntegerFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegerFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DD1F0420D18BBF001DFA5E /* IntegerFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerFinderUITests.swift; sourceTree = "<group>"; };
 		A1DD1F0620D18BBF001DFA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1DD1F1C20D18D76001DFA5E /* MainNetworkRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNetworkRepository.swift; sourceTree = "<group>"; };
+		A1DD1F1D20D18D76001DFA5E /* MainRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
+		A1DD1F2020D18D8E001DFA5E /* GenericEntityMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericEntityMapper.swift; sourceTree = "<group>"; };
+		A1DD1F2120D18D8E001DFA5E /* MappableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappableEntity.swift; sourceTree = "<group>"; };
+		A1DD1F2520D18D9F001DFA5E /* Int+MappableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+MappableEntity.swift"; sourceTree = "<group>"; };
+		A1DD1F2720D18DAC001DFA5E /* NetworkSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
+		A1DD1F2A20D18E44001DFA5E /* JSONError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
+		A1DD1F2B20D18E45001DFA5E /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		A1DD1F2F20D18E50001DFA5E /* ErrorCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCatcher.swift; sourceTree = "<group>"; };
+		A1DD1F3220D18E66001DFA5E /* IntegerFinderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerFinderAPI.swift; sourceTree = "<group>"; };
+		B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		C638EE1D4068D80D4A704973 /* Pods-IntegerFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder.release.xcconfig"; sourceTree = "<group>"; };
+		CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC131227B476433027E5E1F7 /* Pods-IntegerFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DAD292551C2F2BE795EB12F /* Pods_IntegerFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256641BBD0D9CB27F9FC99E6 /* Pods_IntegerFinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +104,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F6D460683B4FD2CF553A067 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC131227B476433027E5E1F7 /* Pods-IntegerFinder.debug.xcconfig */,
+				C638EE1D4068D80D4A704973 /* Pods-IntegerFinder.release.xcconfig */,
+				CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */,
+				B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		567FB8974A1D7549964942A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */,
+				DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1DD1ED820D18BBE001DFA5E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				A1DD1EF820D18BBF001DFA5E /* IntegerFinderTests */,
 				A1DD1F0320D18BBF001DFA5E /* IntegerFinderUITests */,
 				A1DD1EE220D18BBE001DFA5E /* Products */,
+				1F6D460683B4FD2CF553A067 /* Pods */,
+				567FB8974A1D7549964942A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +149,12 @@
 		A1DD1EE320D18BBE001DFA5E /* IntegerFinder */ = {
 			isa = PBXGroup;
 			children = (
-				A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */,
+				A1DD1F1720D18D2F001DFA5E /* Presentation */,
+				A1DD1F1620D18D27001DFA5E /* Domain */,
+				A1DD1F1520D18D20001DFA5E /* Store */,
+				A1DD1F1220D18CE7001DFA5E /* Support Files */,
 				A1DD1EE620D18BBE001DFA5E /* ViewController.swift */,
 				A1DD1EE820D18BBE001DFA5E /* Main.storyboard */,
-				A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */,
-				A1DD1EED20D18BBF001DFA5E /* LaunchScreen.storyboard */,
-				A1DD1EF020D18BBF001DFA5E /* Info.plist */,
 			);
 			path = IntegerFinder;
 			sourceTree = "<group>";
@@ -125,6 +177,112 @@
 			path = IntegerFinderUITests;
 			sourceTree = "<group>";
 		};
+		A1DD1F1220D18CE7001DFA5E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */,
+				A1DD1EED20D18BBF001DFA5E /* LaunchScreen.storyboard */,
+				A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */,
+				A1DD1EF020D18BBF001DFA5E /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		A1DD1F1520D18D20001DFA5E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F1A20D18D55001DFA5E /* Repository */,
+				A1DD1F1820D18D44001DFA5E /* Mapper */,
+				A1DD1F1920D18D4F001DFA5E /* Network */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		A1DD1F1620D18D27001DFA5E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A1DD1F1720D18D2F001DFA5E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A1DD1F1820D18D44001DFA5E /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F2420D18D95001DFA5E /* Entity */,
+				A1DD1F2020D18D8E001DFA5E /* GenericEntityMapper.swift */,
+				A1DD1F2120D18D8E001DFA5E /* MappableEntity.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		A1DD1F1920D18D4F001DFA5E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F3120D18E5C001DFA5E /* Endpoint */,
+				A1DD1F2920D18E39001DFA5E /* Error */,
+				A1DD1F2720D18DAC001DFA5E /* NetworkSettings.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A1DD1F1A20D18D55001DFA5E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F1B20D18D6C001DFA5E /* Main */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A1DD1F1B20D18D6C001DFA5E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F1C20D18D76001DFA5E /* MainNetworkRepository.swift */,
+				A1DD1F1D20D18D76001DFA5E /* MainRepository.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A1DD1F2420D18D95001DFA5E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F2520D18D9F001DFA5E /* Int+MappableEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A1DD1F2920D18E39001DFA5E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F2E20D18E47001DFA5E /* Catcher */,
+				A1DD1F2B20D18E45001DFA5E /* HTTPError.swift */,
+				A1DD1F2A20D18E44001DFA5E /* JSONError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		A1DD1F2E20D18E47001DFA5E /* Catcher */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F2F20D18E50001DFA5E /* ErrorCatcher.swift */,
+			);
+			path = Catcher;
+			sourceTree = "<group>";
+		};
+		A1DD1F3120D18E5C001DFA5E /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F3220D18E66001DFA5E /* IntegerFinderAPI.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1DD1F0920D18BBF001DFA5E /* Build configuration list for PBXNativeTarget "IntegerFinder" */;
 			buildPhases = (
+				E6B05F4A48CF84C65527768D /* [CP] Check Pods Manifest.lock */,
 				A1DD1EDD20D18BBE001DFA5E /* Sources */,
 				A1DD1EDE20D18BBE001DFA5E /* Frameworks */,
 				A1DD1EDF20D18BBE001DFA5E /* Resources */,
+				7125D742CE5A679504264B20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1DD1F0C20D18BBF001DFA5E /* Build configuration list for PBXNativeTarget "IntegerFinderTests" */;
 			buildPhases = (
+				086B99B5830C1C02358783EE /* [CP] Check Pods Manifest.lock */,
 				A1DD1EF120D18BBF001DFA5E /* Sources */,
 				A1DD1EF220D18BBF001DFA5E /* Frameworks */,
 				A1DD1EF320D18BBF001DFA5E /* Resources */,
+				F1D8B4DFCCA3B29763FF82E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,12 +413,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		086B99B5830C1C02358783EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntegerFinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7125D742CE5A679504264B20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6B05F4A48CF84C65527768D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntegerFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1D8B4DFCCA3B29763FF82E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1DD1EDD20D18BBE001DFA5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DD1F2320D18D8E001DFA5E /* MappableEntity.swift in Sources */,
+				A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */,
+				A1DD1F2220D18D8E001DFA5E /* GenericEntityMapper.swift in Sources */,
+				A1DD1F2C20D18E45001DFA5E /* JSONError.swift in Sources */,
+				A1DD1F2820D18DAC001DFA5E /* NetworkSettings.swift in Sources */,
+				A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */,
+				A1DD1F1E20D18D76001DFA5E /* MainNetworkRepository.swift in Sources */,
 				A1DD1EE720D18BBE001DFA5E /* ViewController.swift in Sources */,
+				A1DD1F2620D18D9F001DFA5E /* Int+MappableEntity.swift in Sources */,
+				A1DD1F3320D18E66001DFA5E /* IntegerFinderAPI.swift in Sources */,
+				A1DD1F2D20D18E45001DFA5E /* HTTPError.swift in Sources */,
 				A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,11 +683,12 @@
 		};
 		A1DD1F0A20D18BBF001DFA5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC131227B476433027E5E1F7 /* Pods-IntegerFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BKR95QN7KN;
-				INFOPLIST_FILE = IntegerFinder/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IntegerFinder/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,11 +702,12 @@
 		};
 		A1DD1F0B20D18BBF001DFA5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C638EE1D4068D80D4A704973 /* Pods-IntegerFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BKR95QN7KN;
-				INFOPLIST_FILE = IntegerFinder/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IntegerFinder/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,8 +721,9 @@
 		};
 		A1DD1F0D20D18BBF001DFA5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BKR95QN7KN;
@@ -485,8 +743,9 @@
 		};
 		A1DD1F0E20D18BBF001DFA5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BKR95QN7KN;
@@ -507,7 +766,7 @@
 		A1DD1F1020D18BBF001DFA5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BKR95QN7KN;
 				INFOPLIST_FILE = IntegerFinderUITests/Info.plist;
@@ -527,7 +786,7 @@
 		A1DD1F1120D18BBF001DFA5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BKR95QN7KN;
 				INFOPLIST_FILE = IntegerFinderUITests/Info.plist;
