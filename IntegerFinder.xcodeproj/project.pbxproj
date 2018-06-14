@@ -40,6 +40,12 @@
 		A1FE0EAA20D1B3B1003D6ADB /* RepositoryDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EA920D1B3B1003D6ADB /* RepositoryDependencyInjection.swift */; };
 		A1FE0EAC20D1B593003D6ADB /* SceneDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EAB20D1B593003D6ADB /* SceneDependencyInjection.swift */; };
 		A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EAD20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift */; };
+		A1FE0EB220D291CC003D6ADB /* GenericViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EB120D291CC003D6ADB /* GenericViewModelMapper.swift */; };
+		A1FE0EB420D291D6003D6ADB /* MappableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EB320D291D6003D6ADB /* MappableViewModel.swift */; };
+		A1FE0EB920D29273003D6ADB /* IntegerArrayViewModel+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EB820D29273003D6ADB /* IntegerArrayViewModel+Mappable.swift */; };
+		A1FE0EBE20D2937E003D6ADB /* MappableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EBD20D2937E003D6ADB /* MappableModel.swift */; };
+		A1FE0EC120D2939F003D6ADB /* GenericModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EC020D2939F003D6ADB /* GenericModelMapper.swift */; };
+		A1FE0EC420D293FB003D6ADB /* Int+MappableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EC320D293FB003D6ADB /* Int+MappableModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +103,12 @@
 		A1FE0EA920D1B3B1003D6ADB /* RepositoryDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDependencyInjection.swift; sourceTree = "<group>"; };
 		A1FE0EAB20D1B593003D6ADB /* SceneDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDependencyInjection.swift; sourceTree = "<group>"; };
 		A1FE0EAD20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
+		A1FE0EB120D291CC003D6ADB /* GenericViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewModelMapper.swift; sourceTree = "<group>"; };
+		A1FE0EB320D291D6003D6ADB /* MappableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappableViewModel.swift; sourceTree = "<group>"; };
+		A1FE0EB820D29273003D6ADB /* IntegerArrayViewModel+Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntegerArrayViewModel+Mappable.swift"; sourceTree = "<group>"; };
+		A1FE0EBD20D2937E003D6ADB /* MappableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappableModel.swift; sourceTree = "<group>"; };
+		A1FE0EC020D2939F003D6ADB /* GenericModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericModelMapper.swift; sourceTree = "<group>"; };
+		A1FE0EC320D293FB003D6ADB /* Int+MappableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+MappableModel.swift"; sourceTree = "<group>"; };
 		B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		C638EE1D4068D80D4A704973 /* Pods-IntegerFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder.release.xcconfig"; sourceTree = "<group>"; };
 		CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +241,7 @@
 		A1DD1F1620D18D27001DFA5E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A1FE0EBA20D2933F003D6ADB /* Mapper */,
 				A1E5D86E20D19F3C002DA442 /* Use Case */,
 			);
 			path = Domain;
@@ -246,8 +259,8 @@
 		A1DD1F1820D18D44001DFA5E /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				A1FE0EBC20D2935C003D6ADB /* Generic */,
 				A1DD1F2420D18D95001DFA5E /* Entity */,
-				A1DD1F2020D18D8E001DFA5E /* GenericEntityMapper.swift */,
 				A1DD1F2120D18D8E001DFA5E /* MappableEntity.swift */,
 			);
 			path = Mapper;
@@ -334,7 +347,8 @@
 		A1E5D87320D1A054002DA442 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				A1E5D87420D1A06C002DA442 /* CollectionViewAdapter.swift */,
+				A1FE0EB020D29191003D6ADB /* Mapper */,
+				A1FE0EAF20D29187003D6ADB /* Adapter */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -342,6 +356,7 @@
 		A1E5D87620D1A0CC002DA442 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A1FE0EB520D29225003D6ADB /* Mapper */,
 				A1E5D88420D1AA2C002DA442 /* ViewModel */,
 				A1E5D87720D1A0D2002DA442 /* CollectionView */,
 				A1E5D88720D1AC3C002DA442 /* MainScreenViewController.swift */,
@@ -387,6 +402,73 @@
 				A1FE0EAD20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift */,
 			);
 			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		A1FE0EAF20D29187003D6ADB /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				A1E5D87420D1A06C002DA442 /* CollectionViewAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		A1FE0EB020D29191003D6ADB /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE0EC520D29442003D6ADB /* Generic */,
+				A1FE0EB320D291D6003D6ADB /* MappableViewModel.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		A1FE0EB520D29225003D6ADB /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE0EB820D29273003D6ADB /* IntegerArrayViewModel+Mappable.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		A1FE0EBA20D2933F003D6ADB /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE0EBF20D29389003D6ADB /* Generic */,
+				A1FE0EC220D293DE003D6ADB /* Model */,
+				A1FE0EBD20D2937E003D6ADB /* MappableModel.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		A1FE0EBC20D2935C003D6ADB /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1F2020D18D8E001DFA5E /* GenericEntityMapper.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		A1FE0EBF20D29389003D6ADB /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE0EC020D2939F003D6ADB /* GenericModelMapper.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		A1FE0EC220D293DE003D6ADB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE0EC320D293FB003D6ADB /* Int+MappableModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1FE0EC520D29442003D6ADB /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE0EB120D291CC003D6ADB /* GenericViewModelMapper.swift */,
+			);
+			path = Generic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FE0EB420D291D6003D6ADB /* MappableViewModel.swift in Sources */,
 				A1DD1F2320D18D8E001DFA5E /* MappableEntity.swift in Sources */,
 				A1E5D87920D1A0E2002DA442 /* IntegerArrayCollectionView.swift in Sources */,
 				A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */,
@@ -638,15 +721,20 @@
 				A1E5D88E20D1AC70002DA442 /* MainScreenRouter.swift in Sources */,
 				A1DD1F1E20D18D76001DFA5E /* MainNetworkRepository.swift in Sources */,
 				A1E5D88A20D1AC4E002DA442 /* MainScreenPresenter.swift in Sources */,
+				A1FE0EB920D29273003D6ADB /* IntegerArrayViewModel+Mappable.swift in Sources */,
 				A1E5D87520D1A06C002DA442 /* CollectionViewAdapter.swift in Sources */,
 				A1E5D88820D1AC3C002DA442 /* MainScreenViewController.swift in Sources */,
 				A1FE0EA820D1B30E003D6ADB /* UseCaseDependencyInjection.swift in Sources */,
+				A1FE0EB220D291CC003D6ADB /* GenericViewModelMapper.swift in Sources */,
 				A1E5D88C20D1AC5D002DA442 /* MainScreenConfigurator.swift in Sources */,
 				A1DD1F2620D18D9F001DFA5E /* Int+MappableEntity.swift in Sources */,
+				A1FE0EC120D2939F003D6ADB /* GenericModelMapper.swift in Sources */,
 				A1E5D88620D1AA3E002DA442 /* IntegerArrayViewModel.swift in Sources */,
 				A1FE0EAC20D1B593003D6ADB /* SceneDependencyInjection.swift in Sources */,
+				A1FE0EBE20D2937E003D6ADB /* MappableModel.swift in Sources */,
 				A1E5D87F20D1A2B3002DA442 /* R.generated.swift in Sources */,
 				A1E5D87020D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift in Sources */,
+				A1FE0EC420D293FB003D6ADB /* Int+MappableModel.swift in Sources */,
 				A1DD1F3320D18E66001DFA5E /* IntegerFinderAPI.swift in Sources */,
 				A1DD1F2D20D18E45001DFA5E /* HTTPError.swift in Sources */,
 				A1E5D88320D1A920002DA442 /* IntegerArrayCollectionViewCell.swift in Sources */,

@@ -43,7 +43,7 @@ extension IntegerArrayAdapter: CollectionViewProtocol {
 
 extension IntegerArrayAdapter: CollectionViewLayoutProtocol {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellHeight = CGFloat(165.0)
+        let cellHeight = CGFloat(60.0)
         let cellSpacing = (collectionViewLayout as? UICollectionViewFlowLayout)?.minimumInteritemSpacing ?? 20.0
         let numberOfCellsPerRow = CGFloat(4)
         let dividedWidth = (collectionView.bounds.width - (cellSpacing * numberOfCellsPerRow)) / numberOfCellsPerRow

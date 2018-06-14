@@ -29,9 +29,8 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
         retrieveIntegerArrayUseCase.retrieveIntegerArray().subscribe(onNext: { [weak self] (integerArray) in
             
             guard let weakSelf = self else { return }
-//            let gistsViewModel = GistViewModel.array(mapping: gists)
-//            let publicGists = PublicGistsViewModel(gists: gistsViewModel)
-//            weakSelf.view.display(publicGists)
+            let viewModelArray = IntegerArrayViewModel.array(mapping: integerArray)
+            weakSelf.view.display(viewModel: viewModelArray)
             
         }, onError: { (error) in
             

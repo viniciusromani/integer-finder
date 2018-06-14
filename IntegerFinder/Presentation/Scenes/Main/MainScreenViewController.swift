@@ -13,7 +13,7 @@ protocol MainScreenViewProtocol: class {
     var presenter: MainScreenPresenterProtocol! { get set }
     var router: MainScreenRouterProtocol! { get set }
     
-    func display(viewModel integerArrayViewModel: IntegerArrayViewModel)
+    func display(viewModel integerArrayViewModel: [IntegerArrayViewModel])
 }
 
 class MainScreenViewController: UIViewController {
@@ -41,7 +41,7 @@ class MainScreenViewController: UIViewController {
 }
 
 extension MainScreenViewController: MainScreenViewProtocol {
-    func display(viewModel integerArrayViewModel: IntegerArrayViewModel) {
-        
+    func display(viewModel integerArrayViewModel: [IntegerArrayViewModel]) {
+        adapter.setDataSet(integerArrayViewModel)
     }
 }
