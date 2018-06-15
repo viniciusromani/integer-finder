@@ -19,7 +19,7 @@ protocol MainScreenViewProtocol: class {
     func showToast(with message: String)
 }
 
-class MainScreenViewController: UIViewController {
+class MainScreenViewController: UIViewController, ControllableView {
     
     // Protocol conformance
     
@@ -40,6 +40,7 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        showEmptyState(withMessage: "teste", at: integerArrayCollectionView)
         presenter.retrieveIntegerArray()
     }
     
@@ -77,6 +78,7 @@ extension MainScreenViewController: MainScreenViewProtocol {
     }
     
     func display(viewModel integerArrayViewModel: [IntegerArrayViewModel]) {
+        hideEmptyState()
         adapter.setDataSet(integerArrayViewModel)
     }
 }

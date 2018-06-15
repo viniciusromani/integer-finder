@@ -11,17 +11,13 @@ import UIKit
 
 class EmptyStateView: UIView {
     
-    private var title: String {
-        didSet {
-            titleLabel.text = title
-        }
-    }
-    
+    private var title: String = ""
     private var contentView = UIView(frame: .zero)
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = self.title
+        label.textColor = UIColor.black
         label.textAlignment = .center
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
@@ -36,15 +32,20 @@ class EmptyStateView: UIView {
         title = string
         super.init(frame: .zero)
         
-        setup()
         addSubview(contentView)
+        setup()
     }
 }
 
 extension EmptyStateView {
     private func setup() {
+        contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(titleLabel)
         
-        titleLabel.center = contentView.center
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        
+        backgroundColor = UIColor.lightGray
     }
 }

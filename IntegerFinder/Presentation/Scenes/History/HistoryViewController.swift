@@ -16,7 +16,7 @@ protocol HistoryViewProtocol: class {
     func display(viewModel historyViewModelArray: [HistoryViewModel])
 }
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UIViewController, ControllableView {
     
     // Protocol conformance
     

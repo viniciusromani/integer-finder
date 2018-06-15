@@ -1,25 +1,44 @@
 //
-//  UIViewController+EmptyState.swift
+//  ControllableView+ViewController.swift
 //  IntegerFinder
 //
 //  Created by Vinicius Romani on 15/06/18.
 //  Copyright © 2018 Vinicius Romani. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-extension UIViewController {
-    
-    func showEmptyState(withMessage message: String) {
-        let emptyStateView = EmptyStateView(message: message)
+extension ControllableView where Self: UIViewController {
+    func showEmptyState(withMessage message: String, at viewElement: UIView? = nil) {
+        let viewToShowEmptyStateOn: UIView = viewElement == nil ? view: viewElement!
         
-        view.addSubview(emptyStateView)
+        let emptyStateView = EmptyStateView(message: message)
+        viewToShowEmptyStateOn.addSubview(emptyStateView)
         emptyStateView.translatesAutoresizingMaskIntoConstraints = false
-        setWidthConstraint(view.bounds.width, for: emptyStateView)
-        setHeightConstraint(view.bounds.height, for: emptyStateView)
+        setWidthConstraint(viewToShowEmptyStateOn.bounds.width, for: emptyStateView)
+        setHeightConstraint(viewToShowEmptyStateOn.bounds.height, for: emptyStateView)
     }
     
+    func hideEmptyState() {
+        guard let emptyStateView = findEmptyStateView(at: view) else { return }
+        emptyStateView.removeFromSuperview()
+    }
+    
+    private func findEmptyStateView(at viewToFind: UIView) -> UIView? {
+        for subview in viewToFind.subviews {
+            if subview is EmptyStateView {
+                return subview
+            }
+            
+            if subview.subviews.count > 0 {
+                return findEmptyStateView(at: subview)
+            }
+        }
+        return nil
+    }
+}
+
+extension ControllableView {
     private func setWidthConstraint(_ constraintValue: CGFloat, for view: UIView) {
         let widthConstraint = NSLayoutConstraint(item: view,
                                                  attribute: .width,

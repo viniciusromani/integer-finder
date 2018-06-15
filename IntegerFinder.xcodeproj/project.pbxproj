@@ -30,8 +30,9 @@
 		A18AF59120D43D90004652F7 /* DefaultNavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF59020D43D90004652F7 /* DefaultNavigationBarTheme.swift */; };
 		A18AF59620D442B8004652F7 /* UIView+IBDesignables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF59520D442B8004652F7 /* UIView+IBDesignables.swift */; };
 		A18AF59920D44548004652F7 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF59820D44548004652F7 /* EmptyStateView.swift */; };
-		A18AF59C20D44902004652F7 /* UIViewController+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF59B20D44902004652F7 /* UIViewController+EmptyState.swift */; };
 		A18AF5A120D44CA3004652F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18AF5A320D44CA3004652F7 /* Localizable.strings */; };
+		A18AF5A920D45B7B004652F7 /* ControllableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF5A820D45B7B004652F7 /* ControllableView.swift */; };
+		A18AF5AB20D45BB9004652F7 /* ControllableView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF5AA20D45BB9004652F7 /* ControllableView+ViewController.swift */; };
 		A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */; };
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
 		A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */; };
@@ -110,12 +111,13 @@
 		A18AF59020D43D90004652F7 /* DefaultNavigationBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBarTheme.swift; sourceTree = "<group>"; };
 		A18AF59520D442B8004652F7 /* UIView+IBDesignables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBDesignables.swift"; sourceTree = "<group>"; };
 		A18AF59820D44548004652F7 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
-		A18AF59B20D44902004652F7 /* UIViewController+EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+EmptyState.swift"; sourceTree = "<group>"; };
 		A18AF59D20D44C4C004652F7 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
 		A18AF59E20D44C4C004652F7 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A18AF5A220D44CA3004652F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A18AF5A420D44CA5004652F7 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A18AF5A620D44DAB004652F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		A18AF5A820D45B7B004652F7 /* ControllableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllableView.swift; sourceTree = "<group>"; };
+		A18AF5AA20D45BB9004652F7 /* ControllableView+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllableView+ViewController.swift"; sourceTree = "<group>"; };
 		A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegerFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DD1EE920D18BBE001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -281,7 +283,6 @@
 		A18AF58A20D43C8E004652F7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A18AF59A20D448ED004652F7 /* EmptyState */,
 				A18AF59420D442A7004652F7 /* UIView */,
 				A18AF58D20D43D44004652F7 /* NavigationBar */,
 			);
@@ -322,12 +323,13 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		A18AF59A20D448ED004652F7 /* EmptyState */ = {
+		A18AF5A720D45A65004652F7 /* Controllable */ = {
 			isa = PBXGroup;
 			children = (
-				A18AF59B20D44902004652F7 /* UIViewController+EmptyState.swift */,
+				A18AF5A820D45B7B004652F7 /* ControllableView.swift */,
+				A18AF5AA20D45BB9004652F7 /* ControllableView+ViewController.swift */,
 			);
-			path = EmptyState;
+			path = Controllable;
 			sourceTree = "<group>";
 		};
 		A1DD1ED820D18BBE001DFA5E = {
@@ -522,6 +524,7 @@
 		A1E5D87320D1A054002DA442 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				A18AF5A720D45A65004652F7 /* Controllable */,
 				A1FE0EB020D29191003D6ADB /* Mapper */,
 				A1FE0EAF20D29187003D6ADB /* Adapter */,
 			);
@@ -896,6 +899,7 @@
 				A18AF57E20D3DD01004652F7 /* HistoryViewModel+Mappable.swift in Sources */,
 				A1DD1F2320D18D8E001DFA5E /* MappableEntity.swift in Sources */,
 				A1E5D87920D1A0E2002DA442 /* IntegerArrayCollectionView.swift in Sources */,
+				A18AF5AB20D45BB9004652F7 /* ControllableView+ViewController.swift in Sources */,
 				A18AF56620D3D01C004652F7 /* TableViewAdapter.swift in Sources */,
 				A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */,
 				A1FE0EAA20D1B3B1003D6ADB /* RepositoryDependencyInjection.swift in Sources */,
@@ -905,6 +909,7 @@
 				A1DD1F2C20D18E45001DFA5E /* JSONError.swift in Sources */,
 				A18AF58C20D43CA2004652F7 /* UIViewController+NavigationBar.swift in Sources */,
 				A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */,
+				A18AF5A920D45B7B004652F7 /* ControllableView.swift in Sources */,
 				A18AF58320D3DDD8004652F7 /* MatchEntity.swift in Sources */,
 				A1DD1F2820D18DAC001DFA5E /* NetworkSettings.swift in Sources */,
 				A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */,
@@ -932,7 +937,6 @@
 				A1FE0EAC20D1B593003D6ADB /* SceneDependencyInjection.swift in Sources */,
 				A18AF55F20D37B8B004652F7 /* MatchModel.swift in Sources */,
 				A18AF59920D44548004652F7 /* EmptyStateView.swift in Sources */,
-				A18AF59C20D44902004652F7 /* UIViewController+EmptyState.swift in Sources */,
 				A1FE0EBE20D2937E003D6ADB /* MappableModel.swift in Sources */,
 				A1E5D87F20D1A2B3002DA442 /* R.generated.swift in Sources */,
 				A18AF59620D442B8004652F7 /* UIView+IBDesignables.swift in Sources */,
