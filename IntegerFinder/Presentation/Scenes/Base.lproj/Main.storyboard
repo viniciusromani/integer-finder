@@ -137,11 +137,52 @@
                     <connections>
                         <outlet property="integerArrayCollectionView" destination="QTb-os-LfO" id="pfj-n0-5qj"/>
                         <outlet property="numberTextField" destination="ROG-1n-f2q" id="A9m-4c-HZA"/>
+                        <segue destination="67a-o2-wW1" kind="show" identifier="navigateToHistory" id="SU6-wt-qav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1032.8" y="-599.55022488755628"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="fDI-g3-Jhp">
+            <objects>
+                <viewController id="67a-o2-wW1" customClass="HistoryViewController" customModule="IntegerFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jeF-q1-8u7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="qO6-dX-dTx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyTableViewCell" id="sz2-j4-9uK" customClass="HistoryTableViewCell" customModule="IntegerFinder" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sz2-j4-9uK" id="q6M-wc-1gg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qO6-dX-dTx" firstAttribute="trailing" secondItem="eFO-aA-zCw" secondAttribute="trailing" id="0Xj-9z-c4h"/>
+                            <constraint firstItem="qO6-dX-dTx" firstAttribute="top" secondItem="eFO-aA-zCw" secondAttribute="top" id="BUB-pX-Irc"/>
+                            <constraint firstItem="qO6-dX-dTx" firstAttribute="bottom" secondItem="eFO-aA-zCw" secondAttribute="bottom" id="HQ2-jU-Bm4"/>
+                            <constraint firstItem="qO6-dX-dTx" firstAttribute="leading" secondItem="eFO-aA-zCw" secondAttribute="leading" id="hG5-jf-NbE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eFO-aA-zCw"/>
+                    </view>
+                    <connections>
+                        <outlet property="historyTableView" destination="qO6-dX-dTx" id="nC8-fa-ld7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ip2-6T-myN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="-599.55022488755628"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gqm-VQ-NZC">

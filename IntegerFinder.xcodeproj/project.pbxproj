@@ -12,6 +12,19 @@
 		A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */; };
 		A18AF55F20D37B8B004652F7 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF55E20D37B8B004652F7 /* MatchModel.swift */; };
 		A18AF56420D37E44004652F7 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56320D37E44004652F7 /* MapperError.swift */; };
+		A18AF56620D3D01C004652F7 /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56520D3D01C004652F7 /* TableViewAdapter.swift */; };
+		A18AF56A20D3D072004652F7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56920D3D072004652F7 /* HistoryViewController.swift */; };
+		A18AF56C20D3D082004652F7 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56B20D3D082004652F7 /* HistoryPresenter.swift */; };
+		A18AF56E20D3D08B004652F7 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56D20D3D08B004652F7 /* HistoryRouter.swift */; };
+		A18AF57020D3D0A3004652F7 /* HistoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56F20D3D0A3004652F7 /* HistoryConfigurator.swift */; };
+		A18AF57320D3D0BC004652F7 /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF57220D3D0BC004652F7 /* HistoryTableView.swift */; };
+		A18AF57620D3D2D2004652F7 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18AF57520D3D2D2004652F7 /* HistoryTableViewCell.xib */; };
+		A18AF57820D3D67D004652F7 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF57720D3D67D004652F7 /* HistoryTableViewCell.swift */; };
+		A18AF57B20D3D7C6004652F7 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF57A20D3D7C6004652F7 /* HistoryViewModel.swift */; };
+		A18AF57E20D3DD01004652F7 /* HistoryViewModel+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF57D20D3DD01004652F7 /* HistoryViewModel+Mappable.swift */; };
+		A18AF58020D3DD99004652F7 /* MatchModel+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF57F20D3DD99004652F7 /* MatchModel+Mappable.swift */; };
+		A18AF58320D3DDD8004652F7 /* MatchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF58220D3DDD8004652F7 /* MatchEntity.swift */; };
+		A18AF58720D3DE03004652F7 /* MatchEntity+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF58620D3DE03004652F7 /* MatchEntity+Mappable.swift */; };
 		A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */; };
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
 		A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */; };
@@ -72,6 +85,19 @@
 		A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerMatcherUseCase.swift; sourceTree = "<group>"; };
 		A18AF55E20D37B8B004652F7 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		A18AF56320D37E44004652F7 /* MapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperError.swift; sourceTree = "<group>"; };
+		A18AF56520D3D01C004652F7 /* TableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
+		A18AF56920D3D072004652F7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		A18AF56B20D3D082004652F7 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		A18AF56D20D3D08B004652F7 /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		A18AF56F20D3D0A3004652F7 /* HistoryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryConfigurator.swift; sourceTree = "<group>"; };
+		A18AF57220D3D0BC004652F7 /* HistoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableView.swift; sourceTree = "<group>"; };
+		A18AF57520D3D2D2004652F7 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		A18AF57720D3D67D004652F7 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		A18AF57A20D3D7C6004652F7 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		A18AF57D20D3DD01004652F7 /* HistoryViewModel+Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewModel+Mappable.swift"; sourceTree = "<group>"; };
+		A18AF57F20D3DD99004652F7 /* MatchModel+Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchModel+Mappable.swift"; sourceTree = "<group>"; };
+		A18AF58220D3DDD8004652F7 /* MatchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchEntity.swift; sourceTree = "<group>"; };
+		A18AF58620D3DE03004652F7 /* MatchEntity+Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchEntity+Mappable.swift"; sourceTree = "<group>"; };
 		A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegerFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DD1EE920D18BBE001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,6 +204,62 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A18AF56820D3D059004652F7 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF57920D3D7B6004652F7 /* ViewModel */,
+				A18AF57C20D3DCE7004652F7 /* Mapper */,
+				A18AF57120D3D0AB004652F7 /* TableView */,
+				A18AF56920D3D072004652F7 /* HistoryViewController.swift */,
+				A18AF56B20D3D082004652F7 /* HistoryPresenter.swift */,
+				A18AF56D20D3D08B004652F7 /* HistoryRouter.swift */,
+				A18AF56F20D3D0A3004652F7 /* HistoryConfigurator.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		A18AF57120D3D0AB004652F7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF57420D3D0C2004652F7 /* Cell */,
+				A18AF57220D3D0BC004652F7 /* HistoryTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		A18AF57420D3D0C2004652F7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF57520D3D2D2004652F7 /* HistoryTableViewCell.xib */,
+				A18AF57720D3D67D004652F7 /* HistoryTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A18AF57920D3D7B6004652F7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF57A20D3D7C6004652F7 /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A18AF57C20D3DCE7004652F7 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF57D20D3DD01004652F7 /* HistoryViewModel+Mappable.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		A18AF58120D3DDC7004652F7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF58220D3DDD8004652F7 /* MatchEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		A1DD1ED820D18BBE001DFA5E = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +327,7 @@
 		A1DD1F1520D18D20001DFA5E /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				A18AF58120D3DDC7004652F7 /* Entity */,
 				A1DD1F1820D18D44001DFA5E /* Mapper */,
 				A1DD1F1A20D18D55001DFA5E /* Repository */,
 				A1DD1F1920D18D4F001DFA5E /* Network */,
@@ -312,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				A1DD1F2520D18D9F001DFA5E /* Int+Mappable.swift */,
+				A18AF58620D3DE03004652F7 /* MatchEntity+Mappable.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -356,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E5D87620D1A0CC002DA442 /* Main */,
+				A18AF56820D3D059004652F7 /* History */,
 				A1DD1EE820D18BBE001DFA5E /* Main.storyboard */,
 			);
 			path = Scenes;
@@ -373,8 +458,8 @@
 		A1E5D87620D1A0CC002DA442 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A1FE0EB520D29225003D6ADB /* Mapper */,
 				A1E5D88420D1AA2C002DA442 /* ViewModel */,
+				A1FE0EB520D29225003D6ADB /* Mapper */,
 				A1E5D87720D1A0D2002DA442 /* CollectionView */,
 				A1E5D88720D1AC3C002DA442 /* MainScreenViewController.swift */,
 				A1E5D88920D1AC4E002DA442 /* MainScreenPresenter.swift */,
@@ -424,6 +509,7 @@
 		A1FE0EAF20D29187003D6ADB /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				A18AF56520D3D01C004652F7 /* TableViewAdapter.swift */,
 				A1E5D87420D1A06C002DA442 /* CollectionViewAdapter.swift */,
 			);
 			path = Adapter;
@@ -476,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				A1FE0EC320D293FB003D6ADB /* Int+MappableModel.swift */,
+				A18AF57F20D3DD99004652F7 /* MatchModel+Mappable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -598,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DD1EEF20D18BBF001DFA5E /* LaunchScreen.storyboard in Resources */,
+				A18AF57620D3D2D2004652F7 /* HistoryTableViewCell.xib in Resources */,
 				A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */,
 				A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */,
 				A1E5D88120D1A30C002DA442 /* IntegerArrayCollectionViewCell.xib in Resources */,
@@ -730,25 +818,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FE0EB420D291D6003D6ADB /* MappableViewModel.swift in Sources */,
+				A18AF57E20D3DD01004652F7 /* HistoryViewModel+Mappable.swift in Sources */,
 				A1DD1F2320D18D8E001DFA5E /* MappableEntity.swift in Sources */,
 				A1E5D87920D1A0E2002DA442 /* IntegerArrayCollectionView.swift in Sources */,
+				A18AF56620D3D01C004652F7 /* TableViewAdapter.swift in Sources */,
 				A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */,
 				A1FE0EAA20D1B3B1003D6ADB /* RepositoryDependencyInjection.swift in Sources */,
+				A18AF57320D3D0BC004652F7 /* HistoryTableView.swift in Sources */,
+				A18AF56C20D3D082004652F7 /* HistoryPresenter.swift in Sources */,
 				A1DD1F2220D18D8E001DFA5E /* GenericEntityMapper.swift in Sources */,
 				A1DD1F2C20D18E45001DFA5E /* JSONError.swift in Sources */,
 				A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */,
+				A18AF58320D3DDD8004652F7 /* MatchEntity.swift in Sources */,
 				A1DD1F2820D18DAC001DFA5E /* NetworkSettings.swift in Sources */,
 				A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */,
+				A18AF57B20D3D7C6004652F7 /* HistoryViewModel.swift in Sources */,
+				A18AF58020D3DD99004652F7 /* MatchModel+Mappable.swift in Sources */,
 				A1E5D88E20D1AC70002DA442 /* MainScreenRouter.swift in Sources */,
 				A1DD1F1E20D18D76001DFA5E /* MainNetworkRepository.swift in Sources */,
 				A1E5D88A20D1AC4E002DA442 /* MainScreenPresenter.swift in Sources */,
 				A1FE0EB920D29273003D6ADB /* IntegerArrayViewModel+Mappable.swift in Sources */,
+				A18AF57020D3D0A3004652F7 /* HistoryConfigurator.swift in Sources */,
+				A18AF56A20D3D072004652F7 /* HistoryViewController.swift in Sources */,
 				A1E5D87520D1A06C002DA442 /* CollectionViewAdapter.swift in Sources */,
 				A1E5D88820D1AC3C002DA442 /* MainScreenViewController.swift in Sources */,
 				A1FE0EA820D1B30E003D6ADB /* UseCaseDependencyInjection.swift in Sources */,
 				A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */,
+				A18AF56E20D3D08B004652F7 /* HistoryRouter.swift in Sources */,
 				A1FE0EB220D291CC003D6ADB /* GenericViewModelMapper.swift in Sources */,
 				A1E5D88C20D1AC5D002DA442 /* MainScreenConfigurator.swift in Sources */,
+				A18AF57820D3D67D004652F7 /* HistoryTableViewCell.swift in Sources */,
 				A1DD1F2620D18D9F001DFA5E /* Int+Mappable.swift in Sources */,
 				A1FE0EC120D2939F003D6ADB /* GenericModelMapper.swift in Sources */,
 				A1E5D88620D1AA3E002DA442 /* IntegerArrayViewModel.swift in Sources */,
@@ -758,6 +857,7 @@
 				A1E5D87F20D1A2B3002DA442 /* R.generated.swift in Sources */,
 				A1E5D87020D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift in Sources */,
 				A1FE0EC420D293FB003D6ADB /* Int+MappableModel.swift in Sources */,
+				A18AF58720D3DE03004652F7 /* MatchEntity+Mappable.swift in Sources */,
 				A1DD1F3320D18E66001DFA5E /* IntegerFinderAPI.swift in Sources */,
 				A1DD1F2D20D18E45001DFA5E /* HTTPError.swift in Sources */,
 				A1E5D88320D1A920002DA442 /* IntegerArrayCollectionViewCell.swift in Sources */,

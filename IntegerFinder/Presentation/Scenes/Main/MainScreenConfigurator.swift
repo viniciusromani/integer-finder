@@ -19,7 +19,7 @@ struct MainScreenConfigurator {
             presenter.retrieveIntegerArrayUseCase = resolver.resolve(RetrieveIntegerArrayUseCase.self)!
             presenter.integerMatcherUseCase = resolver.resolve(IntegerMatcherArrayUseCase.self)!
             
-//            router.viewController = controller
+            router.viewController = controller
             
             controller.presenter = presenter
             controller.router = router

@@ -36,10 +36,17 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
+    /// Nib `HistoryTableViewCell`.
+    static let historyTableViewCell = _R.nib._HistoryTableViewCell()
     /// Nib `IntegerArrayCollectionViewCell`.
     static let integerArrayCollectionViewCell = _R.nib._IntegerArrayCollectionViewCell()
+    
+    /// `UINib(name: "HistoryTableViewCell", in: bundle)`
+    static func historyTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.historyTableViewCell)
+    }
     
     /// `UINib(name: "IntegerArrayCollectionViewCell", in: bundle)`
     static func integerArrayCollectionViewCell(_: Void = ()) -> UIKit.UINib {
@@ -49,16 +56,33 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `historyTableViewCell`.
+    static let historyTableViewCell: Rswift.ReuseIdentifier<HistoryTableViewCell> = Rswift.ReuseIdentifier(identifier: "historyTableViewCell")
     /// Reuse identifier `integerArrayCollectionViewCell`.
     static let integerArrayCollectionViewCell: Rswift.ReuseIdentifier<IntegerArrayCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "integerArrayCollectionViewCell")
     
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 0 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
   struct segue {
+    /// This struct is generated for `MainScreenViewController`, and contains static references to 1 segues.
+    struct mainScreenViewController {
+      /// Segue identifier `navigateToHistory`.
+      static let navigateToHistory: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainScreenViewController, HistoryViewController> = Rswift.StoryboardSegueIdentifier(identifier: "navigateToHistory")
+      
+      /// Optionally returns a typed version of segue `navigateToHistory`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func navigateToHistory(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainScreenViewController, HistoryViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mainScreenViewController.navigateToHistory, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -102,6 +126,20 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
+    struct _HistoryTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = HistoryTableViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "historyTableViewCell"
+      let name = "HistoryTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> HistoryTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HistoryTableViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _IntegerArrayCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = IntegerArrayCollectionViewCell
       

@@ -54,7 +54,7 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func previousMatchesButtonTouchedUpInside(_ sender: UIButton) {
-        
+        router.navigateToHistory()
     }
 }
 

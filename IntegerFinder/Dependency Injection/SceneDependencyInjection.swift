@@ -13,5 +13,6 @@ struct SceneDependencyInjection {
     
     static func registerScenes(with container: Container) {
         MainScreenConfigurator.configureMainScreenScene(with: container)
+        HistoryConfigurator.configureHistoryScene(with: container)
     }
 }
