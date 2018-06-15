@@ -13,6 +13,8 @@ extension HistoryViewModel: MappableViewModel {
     
     init(mapping model: MatchModel) {
         number = "\(model.typedValue)"
-        status = model.wasFound ? "Existe": "Não Existe"
+        status = model.wasFound ?
+            R.string.localizable.found():
+            R.string.localizable.notFound()
     }
 }

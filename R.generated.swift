@@ -116,8 +116,91 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 0 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
   struct string {
+    /// This `R.string.launchScreen` struct is generated, and contains static references to 0 localization keys.
+    struct launchScreen {
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
+    struct localizable {
+      /// en translation: Found
+      /// 
+      /// Locales: en, pt
+      static let found = Rswift.StringResource(key: "found", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
+      /// en translation: Not Found
+      /// 
+      /// Locales: en, pt
+      static let notFound = Rswift.StringResource(key: "not-found", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
+      
+      /// en translation: Found
+      /// 
+      /// Locales: en, pt
+      static func found(_: Void = ()) -> String {
+        return NSLocalizedString("found", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Not Found
+      /// 
+      /// Locales: en, pt
+      static func notFound(_: Void = ()) -> String {
+        return NSLocalizedString("not-found", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.main` struct is generated, and contains static references to 4 localization keys.
+    struct main {
+      /// pt translation:  
+      /// 
+      /// Locales: pt, en
+      static let nQC9PQQTitle = Rswift.StringResource(key: "7nQ-c9-pQQ.title", tableName: "Main", bundle: R.hostingBundle, locales: ["pt", "en"], comment: nil)
+      /// pt translation: Histórico de Consulta
+      /// 
+      /// Locales: pt, en
+      static let aNbGdLWTNormalTitle = Rswift.StringResource(key: "aNb-gd-lWT.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["pt", "en"], comment: nil)
+      /// pt translation: Redefinir Lista
+      /// 
+      /// Locales: pt, en
+      static let aowXv7C3NormalTitle = Rswift.StringResource(key: "aow-Xv-7C3.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["pt", "en"], comment: nil)
+      /// pt translation: Verificar
+      /// 
+      /// Locales: pt, en
+      static let cnSjPhnNormalTitle = Rswift.StringResource(key: "9Cn-Sj-phn.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["pt", "en"], comment: nil)
+      
+      /// pt translation:  
+      /// 
+      /// Locales: pt, en
+      static func nQC9PQQTitle(_: Void = ()) -> String {
+        return NSLocalizedString("7nQ-c9-pQQ.title", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// pt translation: Histórico de Consulta
+      /// 
+      /// Locales: pt, en
+      static func aNbGdLWTNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("aNb-gd-lWT.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// pt translation: Redefinir Lista
+      /// 
+      /// Locales: pt, en
+      static func aowXv7C3NormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("aow-Xv-7C3.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// pt translation: Verificar
+      /// 
+      /// Locales: pt, en
+      static func cnSjPhnNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("9Cn-Sj-phn.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   

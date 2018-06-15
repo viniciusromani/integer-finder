@@ -1,0 +1,12 @@
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "7nQ-c9-pQQ"; */
+"7nQ-c9-pQQ.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Verificar"; ObjectID = "9Cn-Sj-phn"; */
+"9Cn-Sj-phn.normalTitle" = "Verificar";
+
+/* Class = "UIButton"; normalTitle = "Histórico de Consulta"; ObjectID = "aNb-gd-lWT"; */
+"aNb-gd-lWT.normalTitle" = "Histórico de Consulta";
+
+/* Class = "UIButton"; normalTitle = "Redefinir Lista"; ObjectID = "aow-Xv-7C3"; */
+"aow-Xv-7C3.normalTitle" = "Redefinir Lista";

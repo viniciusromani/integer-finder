@@ -50,7 +50,9 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
     func testMatch(_ stringValue: String?) {
         guard let string = stringValue, let int = Int(string) else { return }
         let result = integerMatcherUseCase.int(int, matchesInSequence: currentIntegerArray)
-        let message = result ? "Existe": "Não Existe"
+        let message = result ?
+            R.string.localizable.found():
+            R.string.localizable.notFound()
         view.showToast(with: message)
         
         let params = MatchModelParams(typedValue: int,
