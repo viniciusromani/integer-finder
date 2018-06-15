@@ -43,6 +43,19 @@ class MainScreenViewController: UIViewController {
         presenter.retrieveIntegerArray()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setNavigationBarTheme()
+        hideNavigationBar()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        showNavigationBar()
+    }
+    
     // IBActions
     
     @IBAction func matchButtonTouchedUpInside(_ sender: UIButton) {

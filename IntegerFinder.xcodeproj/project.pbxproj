@@ -25,6 +25,9 @@
 		A18AF58020D3DD99004652F7 /* MatchModel+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF57F20D3DD99004652F7 /* MatchModel+Mappable.swift */; };
 		A18AF58320D3DDD8004652F7 /* MatchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF58220D3DDD8004652F7 /* MatchEntity.swift */; };
 		A18AF58720D3DE03004652F7 /* MatchEntity+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF58620D3DE03004652F7 /* MatchEntity+Mappable.swift */; };
+		A18AF58C20D43CA2004652F7 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF58B20D43CA2004652F7 /* UIViewController+NavigationBar.swift */; };
+		A18AF58F20D43D54004652F7 /* NavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF58E20D43D54004652F7 /* NavigationBarTheme.swift */; };
+		A18AF59120D43D90004652F7 /* DefaultNavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF59020D43D90004652F7 /* DefaultNavigationBarTheme.swift */; };
 		A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */; };
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
 		A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */; };
@@ -98,6 +101,9 @@
 		A18AF57F20D3DD99004652F7 /* MatchModel+Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchModel+Mappable.swift"; sourceTree = "<group>"; };
 		A18AF58220D3DDD8004652F7 /* MatchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchEntity.swift; sourceTree = "<group>"; };
 		A18AF58620D3DE03004652F7 /* MatchEntity+Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchEntity+Mappable.swift"; sourceTree = "<group>"; };
+		A18AF58B20D43CA2004652F7 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		A18AF58E20D43D54004652F7 /* NavigationBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTheme.swift; sourceTree = "<group>"; };
+		A18AF59020D43D90004652F7 /* DefaultNavigationBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBarTheme.swift; sourceTree = "<group>"; };
 		A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegerFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DD1EE920D18BBE001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -260,6 +266,32 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		A18AF58A20D43C8E004652F7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF58D20D43D44004652F7 /* NavigationBar */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A18AF58D20D43D44004652F7 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF59220D44167004652F7 /* Theme */,
+				A18AF58B20D43CA2004652F7 /* UIViewController+NavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		A18AF59220D44167004652F7 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF58E20D43D54004652F7 /* NavigationBarTheme.swift */,
+				A18AF59020D43D90004652F7 /* DefaultNavigationBarTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		A1DD1ED820D18BBE001DFA5E = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +380,7 @@
 		A1DD1F1720D18D2F001DFA5E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A18AF58A20D43C8E004652F7 /* Extension */,
 				A1E5D87320D1A054002DA442 /* Protocol */,
 				A1E5D87220D1A026002DA442 /* Scenes */,
 			);
@@ -828,6 +861,7 @@
 				A18AF56C20D3D082004652F7 /* HistoryPresenter.swift in Sources */,
 				A1DD1F2220D18D8E001DFA5E /* GenericEntityMapper.swift in Sources */,
 				A1DD1F2C20D18E45001DFA5E /* JSONError.swift in Sources */,
+				A18AF58C20D43CA2004652F7 /* UIViewController+NavigationBar.swift in Sources */,
 				A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */,
 				A18AF58320D3DDD8004652F7 /* MatchEntity.swift in Sources */,
 				A1DD1F2820D18DAC001DFA5E /* NetworkSettings.swift in Sources */,
@@ -842,7 +876,9 @@
 				A18AF56A20D3D072004652F7 /* HistoryViewController.swift in Sources */,
 				A1E5D87520D1A06C002DA442 /* CollectionViewAdapter.swift in Sources */,
 				A1E5D88820D1AC3C002DA442 /* MainScreenViewController.swift in Sources */,
+				A18AF59120D43D90004652F7 /* DefaultNavigationBarTheme.swift in Sources */,
 				A1FE0EA820D1B30E003D6ADB /* UseCaseDependencyInjection.swift in Sources */,
+				A18AF58F20D43D54004652F7 /* NavigationBarTheme.swift in Sources */,
 				A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */,
 				A18AF56E20D3D08B004652F7 /* HistoryRouter.swift in Sources */,
 				A1FE0EB220D291CC003D6ADB /* GenericViewModelMapper.swift in Sources */,
