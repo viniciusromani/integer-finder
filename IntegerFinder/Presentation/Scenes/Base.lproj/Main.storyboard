@@ -90,10 +90,18 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-Sj-phn">
                                                 <rect key="frame" x="120" y="0.0" width="215" height="44"/>
+                                                <color key="backgroundColor" red="0.28235294117647058" green="0.47058823529411764" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="oZ4-fx-GUx"/>
                                                 </constraints>
-                                                <state key="normal" title="Verificar"/>
+                                                <state key="normal" title="Verificar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="matchButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3a-eK-UKT"/>
                                                 </connections>
@@ -102,14 +110,30 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aow-Xv-7C3">
                                         <rect key="frame" x="0.0" y="64" width="335" height="44"/>
-                                        <state key="normal" title="Redefinir Lista"/>
+                                        <color key="backgroundColor" red="0.47058823529411764" green="0.65098039215686276" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Redefinir Lista">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="redefineIntegerArrayButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwc-GM-9dQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNb-gd-lWT">
                                         <rect key="frame" x="0.0" y="128" width="335" height="44"/>
-                                        <state key="normal" title="Histórico de Consulta"/>
+                                        <color key="backgroundColor" red="0.85882352941176465" green="0.58039215686274503" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Histórico de Consulta">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="previousMatchesButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DBB-bn-euM"/>
                                         </connections>

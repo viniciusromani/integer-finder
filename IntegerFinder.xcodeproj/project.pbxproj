@@ -28,6 +28,7 @@
 		A18AF58C20D43CA2004652F7 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF58B20D43CA2004652F7 /* UIViewController+NavigationBar.swift */; };
 		A18AF58F20D43D54004652F7 /* NavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF58E20D43D54004652F7 /* NavigationBarTheme.swift */; };
 		A18AF59120D43D90004652F7 /* DefaultNavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF59020D43D90004652F7 /* DefaultNavigationBarTheme.swift */; };
+		A18AF59620D442B8004652F7 /* UIView+IBDesignables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF59520D442B8004652F7 /* UIView+IBDesignables.swift */; };
 		A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */; };
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
 		A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */; };
@@ -104,6 +105,7 @@
 		A18AF58B20D43CA2004652F7 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		A18AF58E20D43D54004652F7 /* NavigationBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTheme.swift; sourceTree = "<group>"; };
 		A18AF59020D43D90004652F7 /* DefaultNavigationBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBarTheme.swift; sourceTree = "<group>"; };
+		A18AF59520D442B8004652F7 /* UIView+IBDesignables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBDesignables.swift"; sourceTree = "<group>"; };
 		A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegerFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DD1EE920D18BBE001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 		A18AF58A20D43C8E004652F7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A18AF59420D442A7004652F7 /* UIView */,
 				A18AF58D20D43D44004652F7 /* NavigationBar */,
 			);
 			path = Extension;
@@ -290,6 +293,14 @@
 				A18AF59020D43D90004652F7 /* DefaultNavigationBarTheme.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		A18AF59420D442A7004652F7 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A18AF59520D442B8004652F7 /* UIView+IBDesignables.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		A1DD1ED820D18BBE001DFA5E = {
@@ -891,6 +902,7 @@
 				A18AF55F20D37B8B004652F7 /* MatchModel.swift in Sources */,
 				A1FE0EBE20D2937E003D6ADB /* MappableModel.swift in Sources */,
 				A1E5D87F20D1A2B3002DA442 /* R.generated.swift in Sources */,
+				A18AF59620D442B8004652F7 /* UIView+IBDesignables.swift in Sources */,
 				A1E5D87020D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift in Sources */,
 				A1FE0EC420D293FB003D6ADB /* Int+MappableModel.swift in Sources */,
 				A18AF58720D3DE03004652F7 /* MatchEntity+Mappable.swift in Sources */,
