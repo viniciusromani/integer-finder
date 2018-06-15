@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		256641BBD0D9CB27F9FC99E6 /* Pods_IntegerFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */; };
 		4DAD292551C2F2BE795EB12F /* Pods_IntegerFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */; };
+		A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */; };
 		A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */; };
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
 		A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerMatcherUseCase.swift; sourceTree = "<group>"; };
 		A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegerFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DD1EE920D18BBE001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E5D86F20D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift */,
+				A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */,
 			);
 			path = "Use Case";
 			sourceTree = "<group>";
@@ -338,8 +341,8 @@
 		A1E5D87220D1A026002DA442 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A1DD1EE820D18BBE001DFA5E /* Main.storyboard */,
 				A1E5D87620D1A0CC002DA442 /* Main */,
+				A1DD1EE820D18BBE001DFA5E /* Main.storyboard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -725,6 +728,7 @@
 				A1E5D87520D1A06C002DA442 /* CollectionViewAdapter.swift in Sources */,
 				A1E5D88820D1AC3C002DA442 /* MainScreenViewController.swift in Sources */,
 				A1FE0EA820D1B30E003D6ADB /* UseCaseDependencyInjection.swift in Sources */,
+				A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */,
 				A1FE0EB220D291CC003D6ADB /* GenericViewModelMapper.swift in Sources */,
 				A1E5D88C20D1AC5D002DA442 /* MainScreenConfigurator.swift in Sources */,
 				A1DD1F2620D18D9F001DFA5E /* Int+MappableEntity.swift in Sources */,

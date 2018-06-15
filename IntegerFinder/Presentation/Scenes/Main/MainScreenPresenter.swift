@@ -11,9 +11,13 @@ import RxSwift
 
 protocol MainScreenPresenterProtocol: class {
     weak var view: MainScreenViewProtocol! { get set }
+    var currentIntegerArray: [Int] { get set }
+    
     var retrieveIntegerArrayUseCase: RetrieveIntegerArrayUseCase! { get set }
+    var integerMatcherUseCase: IntegerMatcherArrayUseCase! { get set }
     
     func retrieveIntegerArray()
+    func testMatch(_ stringValue: String?) -> Bool
 }
 
 class MainScreenPresenter: MainScreenPresenterProtocol {
@@ -23,12 +27,15 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
     // Protocol conformance
     
     var view: MainScreenViewProtocol!
+    var currentIntegerArray: [Int] = []
     var retrieveIntegerArrayUseCase: RetrieveIntegerArrayUseCase!
+    var integerMatcherUseCase: IntegerMatcherArrayUseCase!
     
     func retrieveIntegerArray() {
         retrieveIntegerArrayUseCase.retrieveIntegerArray().subscribe(onNext: { [weak self] (integerArray) in
             
             guard let weakSelf = self else { return }
+            weakSelf.currentIntegerArray = integerArray
             let viewModelArray = IntegerArrayViewModel.array(mapping: integerArray)
             weakSelf.view.display(viewModel: viewModelArray)
             
@@ -37,10 +44,9 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
             // error
         }).disposed(by: disposeBag)
     }
+    
+    func testMatch(_ stringValue: String?) -> Bool {
+        guard let string = stringValue, let int = Int(string) else { return false }
+        return integerMatcherUseCase.int(int, matchesInSequence: currentIntegerArray)
+    }
 }
-
-
-
-
-
-
