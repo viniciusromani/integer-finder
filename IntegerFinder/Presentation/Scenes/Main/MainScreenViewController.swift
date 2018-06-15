@@ -8,12 +8,15 @@
 
 import Foundation
 import UIKit
+import Toast_Swift
+import SkyFloatingLabelTextField
 
 protocol MainScreenViewProtocol: class {
     var presenter: MainScreenPresenterProtocol! { get set }
     var router: MainScreenRouterProtocol! { get set }
     
     func display(viewModel integerArrayViewModel: [IntegerArrayViewModel])
+    func showToast(with message: String)
 }
 
 class MainScreenViewController: UIViewController {
@@ -30,6 +33,7 @@ class MainScreenViewController: UIViewController {
     // IBOutlets
     
     @IBOutlet weak var integerArrayCollectionView: UICollectionView!
+    @IBOutlet weak var numberTextField: SkyFloatingLabelTextField!
     
     // View life cycle
     
@@ -38,9 +42,27 @@ class MainScreenViewController: UIViewController {
         
         presenter.retrieveIntegerArray()
     }
+    
+    // IBActions
+    
+    @IBAction func matchButtonTouchedUpInside(_ sender: UIButton) {
+        presenter.testMatch(numberTextField.text)
+    }
+    
+    @IBAction func redefineIntegerArrayButtonTouchedUpInside(_ sender: UIButton) {
+        presenter.retrieveIntegerArray()
+    }
+    
+    @IBAction func previousMatchesButtonTouchedUpInside(_ sender: UIButton) {
+        
+    }
 }
 
 extension MainScreenViewController: MainScreenViewProtocol {
+    func showToast(with message: String) {
+        view.makeToast(message)
+    }
+    
     func display(viewModel integerArrayViewModel: [IntegerArrayViewModel]) {
         adapter.setDataSet(integerArrayViewModel)
     }

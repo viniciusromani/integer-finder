@@ -1,5 +1,5 @@
 //
-//  Int+MappableModel.swift
+//  Int+Mappable.swift
 //  IntegerFinder
 //
 //  Created by Vinicius Romani on 14/06/18.

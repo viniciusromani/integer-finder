@@ -13,5 +13,4 @@ enum JSONError: Error {
     case typeMismatch
     case keyNotFound
     case valueNotFound
-    case cannotMapToEntity
 }

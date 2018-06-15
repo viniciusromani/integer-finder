@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QTb-os-LfO">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="351"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VbM-hm-Zoz">
                                     <size key="itemSize" width="112" height="123"/>
@@ -38,19 +38,105 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-XW-fhj">
+                                <rect key="frame" x="20" y="455" width="335" height="172"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rnG-Ut-odk">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROG-1n-f2q" customClass="SkyFloatingLabelTextField" customModule="IntegerFinder" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Fuv-Hn-zWT"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineErrorColor">
+                                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textErrorColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleErrorColor">
+                                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Número"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Número"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Número"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-Sj-phn">
+                                                <rect key="frame" x="120" y="0.0" width="215" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="oZ4-fx-GUx"/>
+                                                </constraints>
+                                                <state key="normal" title="Verificar"/>
+                                                <connections>
+                                                    <action selector="matchButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3a-eK-UKT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aow-Xv-7C3">
+                                        <rect key="frame" x="0.0" y="64" width="335" height="44"/>
+                                        <state key="normal" title="Redefinir Lista"/>
+                                        <connections>
+                                            <action selector="redefineIntegerArrayButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwc-GM-9dQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNb-gd-lWT">
+                                        <rect key="frame" x="0.0" y="128" width="335" height="44"/>
+                                        <state key="normal" title="Histórico de Consulta"/>
+                                        <connections>
+                                            <action selector="previousMatchesButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DBB-bn-euM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aNb-gd-lWT" firstAttribute="height" secondItem="9Cn-Sj-phn" secondAttribute="height" id="GKW-e5-Uw9"/>
+                                    <constraint firstItem="aow-Xv-7C3" firstAttribute="height" secondItem="9Cn-Sj-phn" secondAttribute="height" id="Tqk-qr-zRJ"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QTb-os-LfO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ara-oy-LPP"/>
                             <constraint firstItem="QTb-os-LfO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QNX-Sb-bLo"/>
-                            <constraint firstItem="QTb-os-LfO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="faT-iq-sSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7lf-XW-fhj" secondAttribute="bottom" constant="40" id="Qf0-Qb-PKi"/>
+                            <constraint firstItem="7lf-XW-fhj" firstAttribute="top" secondItem="QTb-os-LfO" secondAttribute="bottom" constant="40" id="U2s-68-89e"/>
                             <constraint firstItem="QTb-os-LfO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fbE-sn-Rnc"/>
+                            <constraint firstItem="7lf-XW-fhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hxa-ea-qQR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7lf-XW-fhj" secondAttribute="trailing" constant="20" id="yWk-js-oao"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="YTt-34-TWm"/>
                     <connections>
                         <outlet property="integerArrayCollectionView" destination="QTb-os-LfO" id="pfj-n0-5qj"/>
+                        <outlet property="numberTextField" destination="ROG-1n-f2q" id="A9m-4c-HZA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

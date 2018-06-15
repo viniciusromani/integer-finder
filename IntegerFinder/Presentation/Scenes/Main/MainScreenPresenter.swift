@@ -10,14 +10,15 @@ import Foundation
 import RxSwift
 
 protocol MainScreenPresenterProtocol: class {
-    weak var view: MainScreenViewProtocol! { get set }
+    var view: MainScreenViewProtocol! { get set }
     var currentIntegerArray: [Int] { get set }
+    var matches: [MatchModel] { get set }
     
     var retrieveIntegerArrayUseCase: RetrieveIntegerArrayUseCase! { get set }
     var integerMatcherUseCase: IntegerMatcherArrayUseCase! { get set }
     
     func retrieveIntegerArray()
-    func testMatch(_ stringValue: String?) -> Bool
+    func testMatch(_ stringValue: String?)
 }
 
 class MainScreenPresenter: MainScreenPresenterProtocol {
@@ -28,6 +29,7 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
     
     var view: MainScreenViewProtocol!
     var currentIntegerArray: [Int] = []
+    var matches: [MatchModel] = []
     var retrieveIntegerArrayUseCase: RetrieveIntegerArrayUseCase!
     var integerMatcherUseCase: IntegerMatcherArrayUseCase!
     
@@ -45,8 +47,33 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
         }).disposed(by: disposeBag)
     }
     
-    func testMatch(_ stringValue: String?) -> Bool {
-        guard let string = stringValue, let int = Int(string) else { return false }
-        return integerMatcherUseCase.int(int, matchesInSequence: currentIntegerArray)
+    func testMatch(_ stringValue: String?) {
+        guard let string = stringValue, let int = Int(string) else { return }
+        let result = integerMatcherUseCase.int(int, matchesInSequence: currentIntegerArray)
+        let message = result ? "Existe": "Não Existe"
+        view.showToast(with: message)
+        
+        let params = MatchModelParams(typedValue: int,
+                                      integerArray: currentIntegerArray,
+                                      wasFound: result)
+        storeMatchModel(with: params)
     }
 }
+
+typealias MatchModelParams = (typedValue: Int, integerArray: [Int], wasFound: Bool)
+
+extension MainScreenPresenter {
+    private func storeMatchModel(with params: MatchModelParams) {
+        let matchModel = MatchModel(typedValue: params.typedValue,
+                                    integerArray: params.integerArray,
+                                    wasFound: params.wasFound)
+        matches.append(matchModel)
+    }
+}
+
+
+
+
+
+
+

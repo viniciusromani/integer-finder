@@ -15,5 +15,9 @@ struct UseCaseDependencyInjection {
         container.register(RetrieveIntegerArrayUseCase.self) { (resolver) -> RetrieveIntegerArrayUseCase in
             return RetrieveIntegerArrayUseCase(repository: resolver.resolve(MainRepository.self)!)
         }
+        
+        container.register(IntegerMatcherArrayUseCase.self) { (resolver) -> IntegerMatcherArrayUseCase in
+            return IntegerMatcherArrayUseCase()
+        }
     }
 }
