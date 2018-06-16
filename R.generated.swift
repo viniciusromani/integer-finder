@@ -228,7 +228,7 @@ struct R: Rswift.Validatable {
   
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
-      // There are no resources to validate
+      try _R.validate()
     }
     
     fileprivate init() {}
@@ -239,7 +239,11 @@ struct R: Rswift.Validatable {
   fileprivate init() {}
 }
 
-struct _R {
+struct _R: Rswift.Validatable {
+  static func validate() throws {
+    try storyboard.validate()
+  }
+  
   struct nib {
     struct _HistoryTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = HistoryTableViewCell
@@ -272,7 +276,11 @@ struct _R {
     fileprivate init() {}
   }
   
-  struct storyboard {
+  struct storyboard: Rswift.Validatable {
+    static func validate() throws {
+      try main.validate()
+    }
+    
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType {
       typealias InitialController = UIKit.UIViewController
       
@@ -282,11 +290,26 @@ struct _R {
       fileprivate init() {}
     }
     
-    struct main: Rswift.StoryboardResourceWithInitialControllerType {
+    struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = UIKit.UINavigationController
       
       let bundle = R.hostingBundle
+      let historyViewController = StoryboardViewControllerResource<HistoryViewController>(identifier: "HistoryViewController")
+      let mainScreenViewController = StoryboardViewControllerResource<MainScreenViewController>(identifier: "MainScreenViewController")
       let name = "Main"
+      
+      func historyViewController(_: Void = ()) -> HistoryViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: historyViewController)
+      }
+      
+      func mainScreenViewController(_: Void = ()) -> MainScreenViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mainScreenViewController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.main().historyViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'historyViewController' could not be loaded from storyboard 'Main' as 'HistoryViewController'.") }
+        if _R.storyboard.main().mainScreenViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainScreenViewController' could not be loaded from storyboard 'Main' as 'MainScreenViewController'.") }
+      }
       
       fileprivate init() {}
     }
