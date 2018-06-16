@@ -21,6 +21,8 @@
 		A11E5B8C20D572AC00FD3FDD /* RetrieveIntegerArrayUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B8B20D572AC00FD3FDD /* RetrieveIntegerArrayUseCaseTests.swift */; };
 		A11E5B8E20D572BE00FD3FDD /* IntegerMatcherUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B8D20D572BE00FD3FDD /* IntegerMatcherUseCaseTests.swift */; };
 		A11E5B9520D581BC00FD3FDD /* MatcherModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B9420D581BC00FD3FDD /* MatcherModelMapper.swift */; };
+		A11E5B9920D58FE400FD3FDD /* IntegerArrayViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B9820D58FE400FD3FDD /* IntegerArrayViewModelTests.swift */; };
+		A11E5B9B20D590EE00FD3FDD /* MatcherViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B9A20D590EE00FD3FDD /* MatcherViewModelTests.swift */; };
 		A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */; };
 		A18AF55F20D37B8B004652F7 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF55E20D37B8B004652F7 /* MatchModel.swift */; };
 		A18AF56420D37E44004652F7 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56320D37E44004652F7 /* MapperError.swift */; };
@@ -112,6 +114,8 @@
 		A11E5B8B20D572AC00FD3FDD /* RetrieveIntegerArrayUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveIntegerArrayUseCaseTests.swift; sourceTree = "<group>"; };
 		A11E5B8D20D572BE00FD3FDD /* IntegerMatcherUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerMatcherUseCaseTests.swift; sourceTree = "<group>"; };
 		A11E5B9420D581BC00FD3FDD /* MatcherModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcherModelMapper.swift; sourceTree = "<group>"; };
+		A11E5B9820D58FE400FD3FDD /* IntegerArrayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerArrayViewModelTests.swift; sourceTree = "<group>"; };
+		A11E5B9A20D590EE00FD3FDD /* MatcherViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcherViewModelTests.swift; sourceTree = "<group>"; };
 		A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerMatcherUseCase.swift; sourceTree = "<group>"; };
 		A18AF55E20D37B8B004652F7 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		A18AF56320D37E44004652F7 /* MapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperError.swift; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 		A11E5B6E20D542E600FD3FDD /* IntegerFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				A11E5B9620D58EE000FD3FDD /* Presentation */,
 				A11E5B8A20D5729300FD3FDD /* Domain */,
 				A11E5B7820D5444600FD3FDD /* Store */,
 				A11E5B7120D542E600FD3FDD /* Info.plist */,
@@ -316,6 +321,23 @@
 			isa = PBXGroup;
 			children = (
 				A11E5B9420D581BC00FD3FDD /* MatcherModelMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		A11E5B9620D58EE000FD3FDD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A11E5B9720D58FB900FD3FDD /* Mapper */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A11E5B9720D58FB900FD3FDD /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				A11E5B9820D58FE400FD3FDD /* IntegerArrayViewModelTests.swift */,
+				A11E5B9A20D590EE00FD3FDD /* MatcherViewModelTests.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -950,12 +972,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11E5B9B20D590EE00FD3FDD /* MatcherViewModelTests.swift in Sources */,
 				A11E5B9520D581BC00FD3FDD /* MatcherModelMapper.swift in Sources */,
 				A11E5B8C20D572AC00FD3FDD /* RetrieveIntegerArrayUseCaseTests.swift in Sources */,
 				A11E5B8320D569AD00FD3FDD /* IntParse.swift in Sources */,
 				A11E5B8E20D572BE00FD3FDD /* IntegerMatcherUseCaseTests.swift in Sources */,
 				A11E5B7E20D5493300FD3FDD /* MainRepositoryTests.swift in Sources */,
 				A11E5B7A20D5445B00FD3FDD /* EndpointTests.swift in Sources */,
+				A11E5B9920D58FE400FD3FDD /* IntegerArrayViewModelTests.swift in Sources */,
 				A11E5B8620D56D5400FD3FDD /* TestableEntityMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

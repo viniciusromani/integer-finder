@@ -13,7 +13,6 @@ import Nimble
 class IntegerMatcherUseCaseTests: XCTestCase {
     
     private let useCase = IntegerMatcherArrayUseCase()
-    
     private let sequence = [66, -30, 58, 70, 91, 19, -7, -37, 37, 3, -42, -77, 47, -24, -52, -57]
     
     func testValidMatch() {
