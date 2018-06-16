@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		256641BBD0D9CB27F9FC99E6 /* Pods_IntegerFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */; };
 		4DAD292551C2F2BE795EB12F /* Pods_IntegerFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */; };
+		A11E5B4620D4B52900FD3FDD /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */; };
+		A11E5B4B20D4B9D100FD3FDD /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */; };
+		A11E5B4D20D4B9E600FD3FDD /* LoadableView+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */; };
+		A11E5B5020D4C54900FD3FDD /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4F20D4C54900FD3FDD /* CustomView.swift */; };
+		A11E5B5220D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B5120D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift */; };
 		A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */; };
 		A18AF55F20D37B8B004652F7 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF55E20D37B8B004652F7 /* MatchModel.swift */; };
 		A18AF56420D37E44004652F7 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56320D37E44004652F7 /* MapperError.swift */; };
@@ -90,6 +95,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
+		A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadableView+UIViewController.swift"; sourceTree = "<group>"; };
+		A11E5B4F20D4C54900FD3FDD /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		A11E5B5120D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
 		A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerMatcherUseCase.swift; sourceTree = "<group>"; };
 		A18AF55E20D37B8B004652F7 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		A18AF56320D37E44004652F7 /* MapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperError.swift; sourceTree = "<group>"; };
@@ -216,6 +226,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A11E5B4920D4B9BF00FD3FDD /* Loadable */ = {
+			isa = PBXGroup;
+			children = (
+				A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */,
+				A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */,
+			);
+			path = Loadable;
+			sourceTree = "<group>";
+		};
+		A11E5B4E20D4C52A00FD3FDD /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				A11E5B4F20D4C54900FD3FDD /* CustomView.swift */,
+				A11E5B4920D4B9BF00FD3FDD /* Loadable */,
+				A18AF5A720D45A65004652F7 /* Controllable */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
 		A18AF55D20D37B7E004652F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				A18AF59520D442B8004652F7 /* UIView+IBDesignables.swift */,
+				A11E5B5120D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -319,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				A18AF59820D44548004652F7 /* EmptyStateView.swift */,
+				A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -524,7 +555,7 @@
 		A1E5D87320D1A054002DA442 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				A18AF5A720D45A65004652F7 /* Controllable */,
+				A11E5B4E20D4C52A00FD3FDD /* Custom View */,
 				A1FE0EB020D29191003D6ADB /* Mapper */,
 				A1FE0EAF20D29187003D6ADB /* Adapter */,
 			);
@@ -903,13 +934,16 @@
 				A18AF56620D3D01C004652F7 /* TableViewAdapter.swift in Sources */,
 				A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */,
 				A1FE0EAA20D1B3B1003D6ADB /* RepositoryDependencyInjection.swift in Sources */,
+				A11E5B5220D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift in Sources */,
 				A18AF57320D3D0BC004652F7 /* HistoryTableView.swift in Sources */,
 				A18AF56C20D3D082004652F7 /* HistoryPresenter.swift in Sources */,
 				A1DD1F2220D18D8E001DFA5E /* GenericEntityMapper.swift in Sources */,
 				A1DD1F2C20D18E45001DFA5E /* JSONError.swift in Sources */,
+				A11E5B4B20D4B9D100FD3FDD /* LoadableView.swift in Sources */,
 				A18AF58C20D43CA2004652F7 /* UIViewController+NavigationBar.swift in Sources */,
 				A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */,
 				A18AF5A920D45B7B004652F7 /* ControllableView.swift in Sources */,
+				A11E5B4620D4B52900FD3FDD /* ActivityIndicatorView.swift in Sources */,
 				A18AF58320D3DDD8004652F7 /* MatchEntity.swift in Sources */,
 				A1DD1F2820D18DAC001DFA5E /* NetworkSettings.swift in Sources */,
 				A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */,
@@ -932,6 +966,7 @@
 				A1E5D88C20D1AC5D002DA442 /* MainScreenConfigurator.swift in Sources */,
 				A18AF57820D3D67D004652F7 /* HistoryTableViewCell.swift in Sources */,
 				A1DD1F2620D18D9F001DFA5E /* Int+Mappable.swift in Sources */,
+				A11E5B5020D4C54900FD3FDD /* CustomView.swift in Sources */,
 				A1FE0EC120D2939F003D6ADB /* GenericModelMapper.swift in Sources */,
 				A1E5D88620D1AA3E002DA442 /* IntegerArrayViewModel.swift in Sources */,
 				A1FE0EAC20D1B593003D6ADB /* SceneDependencyInjection.swift in Sources */,
@@ -939,6 +974,7 @@
 				A18AF59920D44548004652F7 /* EmptyStateView.swift in Sources */,
 				A1FE0EBE20D2937E003D6ADB /* MappableModel.swift in Sources */,
 				A1E5D87F20D1A2B3002DA442 /* R.generated.swift in Sources */,
+				A11E5B4D20D4B9E600FD3FDD /* LoadableView+UIViewController.swift in Sources */,
 				A18AF59620D442B8004652F7 /* UIView+IBDesignables.swift in Sources */,
 				A1E5D87020D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift in Sources */,
 				A1FE0EC420D293FB003D6ADB /* Int+MappableModel.swift in Sources */,

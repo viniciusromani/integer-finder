@@ -15,6 +15,7 @@ extension ControllableView where Self: UIViewController {
         let emptyStateView = EmptyStateView(message: message)
         viewToShowEmptyStateOn.addSubview(emptyStateView)
         emptyStateView.translatesAutoresizingMaskIntoConstraints = false
+        
         setWidthConstraint(viewToShowEmptyStateOn.bounds.width, for: emptyStateView)
         setHeightConstraint(viewToShowEmptyStateOn.bounds.height, for: emptyStateView)
     }
@@ -35,29 +36,5 @@ extension ControllableView where Self: UIViewController {
             }
         }
         return nil
-    }
-}
-
-extension ControllableView {
-    private func setWidthConstraint(_ constraintValue: CGFloat, for view: UIView) {
-        let widthConstraint = NSLayoutConstraint(item: view,
-                                                 attribute: .width,
-                                                 relatedBy: .equal,
-                                                 toItem: nil,
-                                                 attribute: .notAnAttribute,
-                                                 multiplier: 1,
-                                                 constant: constraintValue)
-        view.addConstraint(widthConstraint)
-    }
-    
-    private func setHeightConstraint(_ constraintValue: CGFloat, for view: UIView) {
-        let heightConstraint = NSLayoutConstraint(item: view,
-                                                  attribute: .height,
-                                                  relatedBy: .equal,
-                                                  toItem: nil,
-                                                  attribute: .notAnAttribute,
-                                                  multiplier: 1,
-                                                  constant: constraintValue)
-        view.addConstraint(heightConstraint)
     }
 }

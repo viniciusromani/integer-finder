@@ -123,7 +123,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
     struct localizable {
       /// en translation: Found
       /// 
@@ -133,6 +133,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, pt
       static let notFound = Rswift.StringResource(key: "not-found", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
+      /// en translation: Please check your internet connection
+      /// 
+      /// Locales: en, pt
+      static let connectionError = Rswift.StringResource(key: "connection-error", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
+      /// en translation: There is no still no matches saved, what are you waiting for? :)
+      /// 
+      /// Locales: en, pt
+      static let noMatches = Rswift.StringResource(key: "no-matches", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
       
       /// en translation: Found
       /// 
@@ -146,6 +154,20 @@ struct R: Rswift.Validatable {
       /// Locales: en, pt
       static func notFound(_: Void = ()) -> String {
         return NSLocalizedString("not-found", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Please check your internet connection
+      /// 
+      /// Locales: en, pt
+      static func connectionError(_: Void = ()) -> String {
+        return NSLocalizedString("connection-error", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: There is no still no matches saved, what are you waiting for? :)
+      /// 
+      /// Locales: en, pt
+      static func noMatches(_: Void = ()) -> String {
+        return NSLocalizedString("no-matches", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}

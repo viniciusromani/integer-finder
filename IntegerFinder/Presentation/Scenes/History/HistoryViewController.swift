@@ -14,6 +14,7 @@ protocol HistoryViewProtocol: class {
     var router: HistoryRouterProtocol! { get set }
     
     func display(viewModel historyViewModelArray: [HistoryViewModel])
+    func displayEmptyState(withMessage message: String)
 }
 
 class HistoryViewController: UIViewController, ControllableView {
@@ -44,5 +45,9 @@ extension HistoryViewController: HistoryViewProtocol {
     
     func display(viewModel historyViewModelArray: [HistoryViewModel]) {
         adapter.setDataSet(historyViewModelArray)
+    }
+    
+    func displayEmptyState(withMessage message: String) {
+        showEmptyState(withMessage: message)
     }
 }

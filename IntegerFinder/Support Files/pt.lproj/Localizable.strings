@@ -8,3 +8,6 @@
 
 "found" = "Existe";
 "not-found" = "Não Existe";
+
+"connection-error" = "Por favor verifique sua conexão com a internet";
+"no-matches" = "Ainda não há matches salvos, o que você ainda está esperando ? :)";

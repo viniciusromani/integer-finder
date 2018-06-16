@@ -36,14 +36,24 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
     func retrieveIntegerArray() {
         retrieveIntegerArrayUseCase.retrieveIntegerArray().subscribe(onNext: { [weak self] (integerArray) in
             
-            guard let weakSelf = self else { return }
-            weakSelf.currentIntegerArray = integerArray
+            guard let strongSelf = self else { return }
+            strongSelf.currentIntegerArray = integerArray
             let viewModelArray = IntegerArrayViewModel.array(mapping: integerArray)
-            weakSelf.view.display(viewModel: viewModelArray)
+            strongSelf.view.display(viewModel: viewModelArray)
             
-        }, onError: { (error) in
+        }, onError: { [weak self] (error) in
             
-            // error
+            var message: String = ""
+            switch error {
+            case HTTPError.unreachable:
+                message = R.string.localizable.connectionError()
+            default:
+                message = error.localizedDescription
+            }
+            
+            guard let strongSelf = self else { return }
+            strongSelf.view.displayEmptyState(withMessage: message)
+            
         }).disposed(by: disposeBag)
     }
     
@@ -72,10 +82,4 @@ extension MainScreenPresenter {
         matches.append(matchModel)
     }
 }
-
-
-
-
-
-
 

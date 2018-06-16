@@ -23,6 +23,12 @@ class HistoryPresenter: HistoryPresenterProtocol {
     var matches: [MatchModel] = []
     
     func retrieveMatches() {
+        guard matches.count > 0 else {
+            let message = R.string.localizable.noMatches()
+            self.view.displayEmptyState(withMessage: message)
+            return
+        }
+        
         let historyViewModelArray = HistoryViewModel.array(mapping: matches)
         view.display(viewModel: historyViewModelArray)
     }

@@ -1,58 +1,44 @@
 //
-//  EmptyStateView.swift
+//  ActivityIndicatorView.swift
 //  IntegerFinder
 //
-//  Created by Vinicius Romani on 15/06/18.
+//  Created by Vinicius Romani on 16/06/18.
 //  Copyright © 2018 Vinicius Romani. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class EmptyStateView: UIView {
+class ActivityIndicatorView: UIView {
     
-    private var title: String = "" {
-        didSet {
-            titleLabel.text = title
-        }
-    }
-    
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.text = self.title
-        label.textColor = UIColor.black
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.lineBreakMode = .byWordWrapping
-        return label
-    }()
+    private let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(message string: String) {
-        title = string
+    init() {
         super.init(frame: .zero)
         
         setup()
     }
 }
 
-extension EmptyStateView {
+extension ActivityIndicatorView {
     private func setup() {
-        
         translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.color = UIColor.black
+        activityIndicator.startAnimating()
         
-        addSubview(titleLabel)
-        setTitleLabelConstraints()
+        addSubview(activityIndicator)
+        setActivityIndicatorConstraints()
     }
     
-    private func setTitleLabelConstraints() {
-        setLeftConstraint(25, for: titleLabel, relatedTo: self)
-        
-        var constraint = NSLayoutConstraint(item: titleLabel,
+    private func setActivityIndicatorConstraints() {
+        setWidthConstraint(40, for: activityIndicator)
+        setHeightConstraint(40, for: activityIndicator)
+
+        var constraint = NSLayoutConstraint(item: activityIndicator,
                                             attribute: .centerX,
                                             relatedBy: .equal,
                                             toItem: self,
@@ -60,7 +46,7 @@ extension EmptyStateView {
                                             multiplier: 1,
                                             constant: 0)
         addConstraint(constraint)
-        constraint = NSLayoutConstraint(item: titleLabel,
+        constraint = NSLayoutConstraint(item: activityIndicator,
                                         attribute: .centerY,
                                         relatedBy: .equal,
                                         toItem: self,
@@ -70,3 +56,4 @@ extension EmptyStateView {
         addConstraint(constraint)
     }
 }
+

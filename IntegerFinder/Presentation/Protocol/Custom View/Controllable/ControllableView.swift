@@ -6,10 +6,9 @@
 //  Copyright © 2018 Vinicius Romani. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-protocol ControllableView {
+protocol ControllableView: CustomView {
     func showEmptyState(withMessage message: String, at viewElement: UIView?)
     func hideEmptyState()
 }

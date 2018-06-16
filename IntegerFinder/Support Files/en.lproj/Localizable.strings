@@ -8,3 +8,6 @@
 
 "found" = "Found";
 "not-found" = "Not Found";
+
+"connection-error" = "Please check your internet connection";
+"no-matches" = "There is no still no matches saved, what are you waiting for? :)";
