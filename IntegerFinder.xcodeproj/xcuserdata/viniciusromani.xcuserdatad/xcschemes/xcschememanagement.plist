@@ -7,7 +7,25 @@
 		<key>IntegerFinder.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>14</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A1DD1EE020D18BBE001DFA5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1DD1EF420D18BBF001DFA5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1DD1EFF20D18BBF001DFA5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

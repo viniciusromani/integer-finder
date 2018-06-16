@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		256641BBD0D9CB27F9FC99E6 /* Pods_IntegerFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */; };
-		4DAD292551C2F2BE795EB12F /* Pods_IntegerFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */; };
+		3BE4EF84EEE24D35A3B9B4E1 /* Pods_IntegerFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F7F8976C03CD9D1820DC27 /* Pods_IntegerFinderTests.framework */; };
 		A11E5B4620D4B52900FD3FDD /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */; };
 		A11E5B4B20D4B9D100FD3FDD /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */; };
 		A11E5B4D20D4B9E600FD3FDD /* LoadableView+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */; };
 		A11E5B5020D4C54900FD3FDD /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4F20D4C54900FD3FDD /* CustomView.swift */; };
 		A11E5B5220D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B5120D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift */; };
+		A11E5B7A20D5445B00FD3FDD /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B7920D5445B00FD3FDD /* EndpointTests.swift */; };
 		A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */; };
 		A18AF55F20D37B8B004652F7 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF55E20D37B8B004652F7 /* MatchModel.swift */; };
 		A18AF56420D37E44004652F7 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF56320D37E44004652F7 /* MapperError.swift */; };
@@ -42,8 +42,6 @@
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
 		A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */; };
 		A1DD1EEF20D18BBF001DFA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EED20D18BBF001DFA5E /* LaunchScreen.storyboard */; };
-		A1DD1EFA20D18BBF001DFA5E /* IntegerFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EF920D18BBF001DFA5E /* IntegerFinderTests.swift */; };
-		A1DD1F0520D18BBF001DFA5E /* IntegerFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F0420D18BBF001DFA5E /* IntegerFinderUITests.swift */; };
 		A1DD1F1E20D18D76001DFA5E /* MainNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F1C20D18D76001DFA5E /* MainNetworkRepository.swift */; };
 		A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F1D20D18D76001DFA5E /* MainRepository.swift */; };
 		A1DD1F2220D18D8E001DFA5E /* GenericEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2020D18D8E001DFA5E /* GenericEntityMapper.swift */; };
@@ -75,17 +73,11 @@
 		A1FE0EBE20D2937E003D6ADB /* MappableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EBD20D2937E003D6ADB /* MappableModel.swift */; };
 		A1FE0EC120D2939F003D6ADB /* GenericModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EC020D2939F003D6ADB /* GenericModelMapper.swift */; };
 		A1FE0EC420D293FB003D6ADB /* Int+MappableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE0EC320D293FB003D6ADB /* Int+MappableModel.swift */; };
+		B7176D33FD22FBF8A1C80016 /* Pods_IntegerFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A28D57EECAB1A4510DAF26 /* Pods_IntegerFinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A1DD1EF620D18BBF001DFA5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1DD1ED920D18BBE001DFA5E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1DD1EE020D18BBE001DFA5E;
-			remoteInfo = IntegerFinder;
-		};
-		A1DD1F0120D18BBF001DFA5E /* PBXContainerItemProxy */ = {
+		A11E5B7220D542E600FD3FDD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1DD1ED920D18BBE001DFA5E /* Project object */;
 			proxyType = 1;
@@ -95,11 +87,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09F7F8976C03CD9D1820DC27 /* Pods_IntegerFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C02096B34780631C371A308 /* Pods-IntegerFinder-IntegerFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder-IntegerFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder-IntegerFinderTests/Pods-IntegerFinder-IntegerFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		59A28D57EECAB1A4510DAF26 /* Pods_IntegerFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
 		A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadableView+UIViewController.swift"; sourceTree = "<group>"; };
 		A11E5B4F20D4C54900FD3FDD /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		A11E5B5120D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		A11E5B6D20D542E600FD3FDD /* IntegerFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegerFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11E5B7120D542E600FD3FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A11E5B7920D5445B00FD3FDD /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerMatcherUseCase.swift; sourceTree = "<group>"; };
 		A18AF55E20D37B8B004652F7 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		A18AF56320D37E44004652F7 /* MapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperError.swift; sourceTree = "<group>"; };
@@ -134,12 +132,6 @@
 		A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1DD1EEE20D18BBF001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1DD1EF020D18BBF001DFA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1DD1EF520D18BBF001DFA5E /* IntegerFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegerFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1DD1EF920D18BBF001DFA5E /* IntegerFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerFinderTests.swift; sourceTree = "<group>"; };
-		A1DD1EFB20D18BBF001DFA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1DD1F0020D18BBF001DFA5E /* IntegerFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegerFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1DD1F0420D18BBF001DFA5E /* IntegerFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerFinderUITests.swift; sourceTree = "<group>"; };
-		A1DD1F0620D18BBF001DFA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1DD1F1C20D18D76001DFA5E /* MainNetworkRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNetworkRepository.swift; sourceTree = "<group>"; };
 		A1DD1F1D20D18D76001DFA5E /* MainRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
 		A1DD1F2020D18D8E001DFA5E /* GenericEntityMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericEntityMapper.swift; sourceTree = "<group>"; };
@@ -174,32 +166,25 @@
 		B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		C638EE1D4068D80D4A704973 /* Pods-IntegerFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder.release.xcconfig"; sourceTree = "<group>"; };
 		CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FCAE44709F699E28112C72 /* Pods_IntegerFinder_IntegerFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinder_IntegerFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC131227B476433027E5E1F7 /* Pods-IntegerFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder.debug.xcconfig"; sourceTree = "<group>"; };
-		EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7BF4830897D13D1363C77FA /* Pods-IntegerFinder-IntegerFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder-IntegerFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder-IntegerFinderTests/Pods-IntegerFinder-IntegerFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A11E5B6A20D542E600FD3FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE4EF84EEE24D35A3B9B4E1 /* Pods_IntegerFinderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1DD1EDE20D18BBE001DFA5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DAD292551C2F2BE795EB12F /* Pods_IntegerFinder.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1DD1EF220D18BBF001DFA5E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				256641BBD0D9CB27F9FC99E6 /* Pods_IntegerFinderTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1DD1EFD20D18BBF001DFA5E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B7176D33FD22FBF8A1C80016 /* Pods_IntegerFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +198,8 @@
 				C638EE1D4068D80D4A704973 /* Pods-IntegerFinder.release.xcconfig */,
 				CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */,
 				B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */,
+				F7BF4830897D13D1363C77FA /* Pods-IntegerFinder-IntegerFinderTests.debug.xcconfig */,
+				2C02096B34780631C371A308 /* Pods-IntegerFinder-IntegerFinderTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -220,8 +207,9 @@
 		567FB8974A1D7549964942A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EFF3ECE4FB27D810EB5A1677 /* Pods_IntegerFinder.framework */,
-				DDF45544C6D5EDB346FE8770 /* Pods_IntegerFinderTests.framework */,
+				E9FCAE44709F699E28112C72 /* Pods_IntegerFinder_IntegerFinderTests.framework */,
+				59A28D57EECAB1A4510DAF26 /* Pods_IntegerFinder.framework */,
+				09F7F8976C03CD9D1820DC27 /* Pods_IntegerFinderTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,6 +231,40 @@
 				A18AF5A720D45A65004652F7 /* Controllable */,
 			);
 			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		A11E5B5320D508CD00FD3FDD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A11E5B6620D538F400FD3FDD /* Alert */,
+				A18AF59820D44548004652F7 /* EmptyStateView.swift */,
+				A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A11E5B6620D538F400FD3FDD /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		A11E5B6E20D542E600FD3FDD /* IntegerFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A11E5B7820D5444600FD3FDD /* Store */,
+				A11E5B7120D542E600FD3FDD /* Info.plist */,
+			);
+			path = IntegerFinderTests;
+			sourceTree = "<group>";
+		};
+		A11E5B7820D5444600FD3FDD /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A11E5B7920D5445B00FD3FDD /* EndpointTests.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		A18AF55D20D37B7E004652F7 /* Model */ = {
@@ -345,15 +367,6 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		A18AF59720D4452D004652F7 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				A18AF59820D44548004652F7 /* EmptyStateView.swift */,
-				A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		A18AF5A720D45A65004652F7 /* Controllable */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,8 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				A1DD1EE320D18BBE001DFA5E /* IntegerFinder */,
-				A1DD1EF820D18BBF001DFA5E /* IntegerFinderTests */,
-				A1DD1F0320D18BBF001DFA5E /* IntegerFinderUITests */,
+				A11E5B6E20D542E600FD3FDD /* IntegerFinderTests */,
 				A1DD1EE220D18BBE001DFA5E /* Products */,
 				1F6D460683B4FD2CF553A067 /* Pods */,
 				567FB8974A1D7549964942A0 /* Frameworks */,
@@ -379,8 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */,
-				A1DD1EF520D18BBF001DFA5E /* IntegerFinderTests.xctest */,
-				A1DD1F0020D18BBF001DFA5E /* IntegerFinderUITests.xctest */,
+				A11E5B6D20D542E600FD3FDD /* IntegerFinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -395,24 +406,6 @@
 				A1DD1F1220D18CE7001DFA5E /* Support Files */,
 			);
 			path = IntegerFinder;
-			sourceTree = "<group>";
-		};
-		A1DD1EF820D18BBF001DFA5E /* IntegerFinderTests */ = {
-			isa = PBXGroup;
-			children = (
-				A1DD1EF920D18BBF001DFA5E /* IntegerFinderTests.swift */,
-				A1DD1EFB20D18BBF001DFA5E /* Info.plist */,
-			);
-			path = IntegerFinderTests;
-			sourceTree = "<group>";
-		};
-		A1DD1F0320D18BBF001DFA5E /* IntegerFinderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A1DD1F0420D18BBF001DFA5E /* IntegerFinderUITests.swift */,
-				A1DD1F0620D18BBF001DFA5E /* Info.plist */,
-			);
-			path = IntegerFinderUITests;
 			sourceTree = "<group>";
 		};
 		A1DD1F1220D18CE7001DFA5E /* Support Files */ = {
@@ -452,7 +445,7 @@
 		A1DD1F1720D18D2F001DFA5E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A18AF59720D4452D004652F7 /* Helper */,
+				A11E5B5320D508CD00FD3FDD /* Components */,
 				A18AF58A20D43C8E004652F7 /* Extension */,
 				A1E5D87320D1A054002DA442 /* Protocol */,
 				A1E5D87220D1A026002DA442 /* Scenes */,
@@ -685,6 +678,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A11E5B6C20D542E600FD3FDD /* IntegerFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A11E5B7620D542E600FD3FDD /* Build configuration list for PBXNativeTarget "IntegerFinderTests" */;
+			buildPhases = (
+				028391C0BF3085F41005CA4E /* [CP] Check Pods Manifest.lock */,
+				A11E5B6920D542E600FD3FDD /* Sources */,
+				A11E5B6A20D542E600FD3FDD /* Frameworks */,
+				A11E5B6B20D542E600FD3FDD /* Resources */,
+				2FCA0929BF740DC375E3074A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A11E5B7320D542E600FD3FDD /* PBXTargetDependency */,
+			);
+			name = IntegerFinderTests;
+			productName = IntegerFinderTests;
+			productReference = A11E5B6D20D542E600FD3FDD /* IntegerFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A1DD1EE020D18BBE001DFA5E /* IntegerFinder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1DD1F0920D18BBF001DFA5E /* Build configuration list for PBXNativeTarget "IntegerFinder" */;
@@ -694,7 +707,7 @@
 				A1DD1EDD20D18BBE001DFA5E /* Sources */,
 				A1DD1EDE20D18BBE001DFA5E /* Frameworks */,
 				A1DD1EDF20D18BBE001DFA5E /* Resources */,
-				7125D742CE5A679504264B20 /* [CP] Embed Pods Frameworks */,
+				B0A1E512458D3632904265AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -704,44 +717,6 @@
 			productName = IntegerFinder;
 			productReference = A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A1DD1EF420D18BBF001DFA5E /* IntegerFinderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1DD1F0C20D18BBF001DFA5E /* Build configuration list for PBXNativeTarget "IntegerFinderTests" */;
-			buildPhases = (
-				086B99B5830C1C02358783EE /* [CP] Check Pods Manifest.lock */,
-				A1DD1EF120D18BBF001DFA5E /* Sources */,
-				A1DD1EF220D18BBF001DFA5E /* Frameworks */,
-				A1DD1EF320D18BBF001DFA5E /* Resources */,
-				F1D8B4DFCCA3B29763FF82E8 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1DD1EF720D18BBF001DFA5E /* PBXTargetDependency */,
-			);
-			name = IntegerFinderTests;
-			productName = IntegerFinderTests;
-			productReference = A1DD1EF520D18BBF001DFA5E /* IntegerFinderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A1DD1EFF20D18BBF001DFA5E /* IntegerFinderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1DD1F0F20D18BBF001DFA5E /* Build configuration list for PBXNativeTarget "IntegerFinderUITests" */;
-			buildPhases = (
-				A1DD1EFC20D18BBF001DFA5E /* Sources */,
-				A1DD1EFD20D18BBF001DFA5E /* Frameworks */,
-				A1DD1EFE20D18BBF001DFA5E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1DD1F0220D18BBF001DFA5E /* PBXTargetDependency */,
-			);
-			name = IntegerFinderUITests;
-			productName = IntegerFinderUITests;
-			productReference = A1DD1F0020D18BBF001DFA5E /* IntegerFinderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -753,16 +728,13 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Vinicius Romani";
 				TargetAttributes = {
+					A11E5B6C20D542E600FD3FDD = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						TestTargetID = A1DD1EE020D18BBE001DFA5E;
+					};
 					A1DD1EE020D18BBE001DFA5E = {
 						CreatedOnToolsVersion = 9.4;
-					};
-					A1DD1EF420D18BBF001DFA5E = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = A1DD1EE020D18BBE001DFA5E;
-					};
-					A1DD1EFF20D18BBF001DFA5E = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = A1DD1EE020D18BBE001DFA5E;
 					};
 				};
 			};
@@ -781,13 +753,19 @@
 			projectRoot = "";
 			targets = (
 				A1DD1EE020D18BBE001DFA5E /* IntegerFinder */,
-				A1DD1EF420D18BBF001DFA5E /* IntegerFinderTests */,
-				A1DD1EFF20D18BBF001DFA5E /* IntegerFinderUITests */,
+				A11E5B6C20D542E600FD3FDD /* IntegerFinderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A11E5B6B20D542E600FD3FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1DD1EDF20D18BBE001DFA5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,24 +779,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1DD1EF320D18BBF001DFA5E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1DD1EFE20D18BBF001DFA5E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		086B99B5830C1C02358783EE /* [CP] Check Pods Manifest.lock */ = {
+		028391C0BF3085F41005CA4E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -836,7 +800,44 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7125D742CE5A679504264B20 /* [CP] Embed Pods Frameworks */ = {
+		2FCA0929BF740DC375E3074A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxNimble/RxNimble.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxNimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E5D87D20D1A263002DA442 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
+		B0A1E512458D3632904265AD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -870,19 +871,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinder/Pods-IntegerFinder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A1E5D87D20D1A263002DA442 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
-		};
 		E6B05F4A48CF84C65527768D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -901,27 +889,17 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F1D8B4DFCCA3B29763FF82E8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntegerFinderTests/Pods-IntegerFinderTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A11E5B6920D542E600FD3FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11E5B7A20D5445B00FD3FDD /* EndpointTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1DD1EDD20D18BBE001DFA5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -987,34 +965,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1DD1EF120D18BBF001DFA5E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1DD1EFA20D18BBF001DFA5E /* IntegerFinderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1DD1EFC20D18BBF001DFA5E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1DD1F0520D18BBF001DFA5E /* IntegerFinderUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A1DD1EF720D18BBF001DFA5E /* PBXTargetDependency */ = {
+		A11E5B7320D542E600FD3FDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1DD1EE020D18BBE001DFA5E /* IntegerFinder */;
-			targetProxy = A1DD1EF620D18BBF001DFA5E /* PBXContainerItemProxy */;
-		};
-		A1DD1F0220D18BBF001DFA5E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1DD1EE020D18BBE001DFA5E /* IntegerFinder */;
-			targetProxy = A1DD1F0120D18BBF001DFA5E /* PBXContainerItemProxy */;
+			targetProxy = A11E5B7220D542E600FD3FDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1050,6 +1007,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A11E5B7420D542E600FD3FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKR95QN7KN;
+				INFOPLIST_FILE = IntegerFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.IntegerFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntegerFinder.app/IntegerFinder";
+			};
+			name = Debug;
+		};
+		A11E5B7520D542E600FD3FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKR95QN7KN;
+				INFOPLIST_FILE = IntegerFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.IntegerFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntegerFinder.app/IntegerFinder";
+			};
+			name = Release;
+		};
 		A1DD1F0720D18BBF001DFA5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1204,93 +1206,18 @@
 			};
 			name = Release;
 		};
-		A1DD1F0D20D18BBF001DFA5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC3DD59C37F6C5A83C2D3F5C /* Pods-IntegerFinderTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BKR95QN7KN;
-				INFOPLIST_FILE = IntegerFinderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.IntegerFinderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntegerFinder.app/IntegerFinder";
-			};
-			name = Debug;
-		};
-		A1DD1F0E20D18BBF001DFA5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2410ED8419BEE4EA69A1F2C /* Pods-IntegerFinderTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BKR95QN7KN;
-				INFOPLIST_FILE = IntegerFinderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.IntegerFinderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntegerFinder.app/IntegerFinder";
-			};
-			name = Release;
-		};
-		A1DD1F1020D18BBF001DFA5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BKR95QN7KN;
-				INFOPLIST_FILE = IntegerFinderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.IntegerFinderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = IntegerFinder;
-			};
-			name = Debug;
-		};
-		A1DD1F1120D18BBF001DFA5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BKR95QN7KN;
-				INFOPLIST_FILE = IntegerFinderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.IntegerFinderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = IntegerFinder;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A11E5B7620D542E600FD3FDD /* Build configuration list for PBXNativeTarget "IntegerFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A11E5B7420D542E600FD3FDD /* Debug */,
+				A11E5B7520D542E600FD3FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1DD1EDC20D18BBE001DFA5E /* Build configuration list for PBXProject "IntegerFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1305,24 +1232,6 @@
 			buildConfigurations = (
 				A1DD1F0A20D18BBF001DFA5E /* Debug */,
 				A1DD1F0B20D18BBF001DFA5E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1DD1F0C20D18BBF001DFA5E /* Build configuration list for PBXNativeTarget "IntegerFinderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1DD1F0D20D18BBF001DFA5E /* Debug */,
-				A1DD1F0E20D18BBF001DFA5E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1DD1F0F20D18BBF001DFA5E /* Build configuration list for PBXNativeTarget "IntegerFinderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1DD1F1020D18BBF001DFA5E /* Debug */,
-				A1DD1F1120D18BBF001DFA5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,12 +9,18 @@
 import Foundation
 import UIKit
 
+protocol HistoryAdapterViewProtocol {
+    func didSelect(history historyViewModel: HistoryViewModel)
+}
+
 final class HistoryTableViewAdapter: NSObject {
     var dataSet: [HistoryViewModel] = []
     var tableView: UITableView
+    var viewDelegate: HistoryAdapterViewProtocol?
     
-    init(tableView: UITableView) {
+    init(tableView: UITableView, and viewDelegate: HistoryAdapterViewProtocol?) {
         self.tableView = tableView
+        self.viewDelegate = viewDelegate
         super.init()
         
         setup(tableView: tableView)
@@ -39,6 +45,11 @@ extension HistoryTableViewAdapter: TableViewProtocol {
         
         cell.configure(with: model(for: indexPath))
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        viewDelegate?.didSelect(history: model(for: indexPath))
     }
 }
 

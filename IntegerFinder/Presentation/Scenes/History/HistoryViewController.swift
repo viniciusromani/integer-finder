@@ -26,7 +26,7 @@ class HistoryViewController: UIViewController, ControllableView {
     
     // TableView adapter
     
-    lazy var adapter = HistoryTableViewAdapter(tableView: historyTableView)
+    lazy var adapter = HistoryTableViewAdapter(tableView: historyTableView, and: self)
     
     // IBOutlets
     
@@ -51,3 +51,11 @@ extension HistoryViewController: HistoryViewProtocol {
         showEmptyState(withMessage: message)
     }
 }
+
+extension HistoryViewController: HistoryAdapterViewProtocol {
+    func didSelect(history historyViewModel: HistoryViewModel) {
+        router.navigateToList()
+    }
+}
+
+

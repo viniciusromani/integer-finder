@@ -10,11 +10,20 @@ import Foundation
 
 protocol HistoryRouterProtocol: class {
     var viewController: HistoryViewController! { get set }
+    
+    func navigateToList()
 }
 
 class HistoryRouter: HistoryRouterProtocol {
     
+    // Segue Identifier
+    
+    
     // Protocol conformance
     
     var viewController: HistoryViewController!
+    
+    func navigateToList() {
+        
+    }
 }
