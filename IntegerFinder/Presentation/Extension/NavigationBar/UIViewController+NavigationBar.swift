@@ -18,10 +18,4 @@ extension UIViewController {
     func showNavigationBar() {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    
-    func setNavigationBarTheme(_ theme: NavigationBarTheme = DefaultNavigationBarTheme()) {
-        navigationController?.navigationBar.tintColor = theme.titleColor
-        navigationController?.navigationBar.barTintColor = theme.backgroundColor
-        navigationController?.navigationBar.barStyle = theme.style
-    }
 }

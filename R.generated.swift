@@ -55,12 +55,19 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
+    /// Nib `HeaderTableViewCell`.
+    static let headerTableViewCell = _R.nib._HeaderTableViewCell()
     /// Nib `HistoryTableViewCell`.
     static let historyTableViewCell = _R.nib._HistoryTableViewCell()
     /// Nib `IntegerArrayCollectionViewCell`.
     static let integerArrayCollectionViewCell = _R.nib._IntegerArrayCollectionViewCell()
+    
+    /// `UINib(name: "HeaderTableViewCell", in: bundle)`
+    static func headerTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.headerTableViewCell)
+    }
     
     /// `UINib(name: "HistoryTableViewCell", in: bundle)`
     static func historyTableViewCell(_: Void = ()) -> UIKit.UINib {
@@ -75,8 +82,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `historyHeaderTableViewCell`.
+    static let historyHeaderTableViewCell: Rswift.ReuseIdentifier<HistoryTableViewCell> = Rswift.ReuseIdentifier(identifier: "historyHeaderTableViewCell")
     /// Reuse identifier `historyTableViewCell`.
     static let historyTableViewCell: Rswift.ReuseIdentifier<HistoryTableViewCell> = Rswift.ReuseIdentifier(identifier: "historyTableViewCell")
     /// Reuse identifier `integerArrayCollectionViewCell`.
@@ -132,12 +141,16 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 5 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 6 localization keys.
     struct localizable {
       /// en translation: -197...197
       /// 
       /// Locales: en, pt
       static let numberNotInRange = Rswift.StringResource(key: "number-not-in-range", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
+      /// en translation: Close
+      /// 
+      /// Locales: en, pt
+      static let close = Rswift.StringResource(key: "close", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
       /// en translation: Found
       /// 
       /// Locales: en, pt
@@ -160,6 +173,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, pt
       static func numberNotInRange(_: Void = ()) -> String {
         return NSLocalizedString("number-not-in-range", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Close
+      /// 
+      /// Locales: en, pt
+      static func close(_: Void = ()) -> String {
+        return NSLocalizedString("close", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Found
@@ -265,6 +285,20 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
+    struct _HeaderTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = HistoryTableViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "historyHeaderTableViewCell"
+      let name = "HeaderTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> HistoryTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HistoryTableViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _HistoryTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = HistoryTableViewCell
       

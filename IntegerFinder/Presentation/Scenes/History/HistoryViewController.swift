@@ -32,6 +32,10 @@ class HistoryViewController: UIViewController, ControllableView {
     
     @IBOutlet weak var historyTableView: UITableView!
     
+    // Variables
+    
+    private var alertBuilder = CustomAlertBuilder()
+    
     // View life cycles
     
     override func viewDidLoad() {
@@ -53,8 +57,14 @@ extension HistoryViewController: HistoryViewProtocol {
 }
 
 extension HistoryViewController: HistoryAdapterViewProtocol {
-    func didSelect(history historyViewModel: HistoryViewModel) {
-        router.navigateToList()
+    func didSelect(history historyViewModel: HistoryViewModel) {        
+        let action = { }
+        let buttonTuple: CustomAlertButtonTuple = (text: R.string.localizable.close(),
+                                                   theme: DefaultAlertButton(),
+                                                   action: action)
+        alertBuilder = alertBuilder.setButtons(with: [buttonTuple])
+        let viewcontroller = alertBuilder.build()
+        present(viewcontroller, animated: true, completion: nil)
     }
 }
 

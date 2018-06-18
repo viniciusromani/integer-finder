@@ -37,10 +37,6 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
     @IBOutlet weak var integerArrayCollectionView: UICollectionView!
     @IBOutlet weak var numberTextField: SkyFloatingLabelTextField!
     
-    // Variables
-    
-    private var alertBuilder = CustomAlertBuilder()
-    
     // View life cycle
     
     override func viewDidLoad() {
@@ -53,7 +49,6 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        setNavigationBarTheme()
         hideNavigationBar()
     }
     
@@ -67,14 +62,10 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
     
     @IBAction func matchButtonTouchedUpInside(_ sender: UIButton) {
         presenter.validate(typedNumber: numberTextField.text)
-//        let action = { }
-//        let buttonTuple: CustomAlertButtonTuple = (text: "Teste", theme: DefaultAlertButton(), action: action)
-//        alertBuilder = alertBuilder.setButtons(with: [buttonTuple])
-//        let viewcontroller = alertBuilder.build()
-//        present(viewcontroller, animated: true, completion: nil)
     }
     
     @IBAction func redefineIntegerArrayButtonTouchedUpInside(_ sender: UIButton) {
+        showActivityIndicatorView(at: integerArrayCollectionView)
         presenter.retrieveIntegerArray()
     }
     
@@ -85,6 +76,7 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
 
 extension MainScreenViewController: MainScreenViewProtocol {
     func showToast(with message: String) {
+        numberTextField.text = ""
         view.makeToast(message)
     }
     

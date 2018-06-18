@@ -69,6 +69,7 @@
 		A1DD1F2D20D18E45001DFA5E /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2B20D18E45001DFA5E /* HTTPError.swift */; };
 		A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F2F20D18E50001DFA5E /* ErrorCatcher.swift */; };
 		A1DD1F3320D18E66001DFA5E /* IntegerFinderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1F3220D18E66001DFA5E /* IntegerFinderAPI.swift */; };
+		A1DEE35820D76FBE009C0D6B /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE35720D76FBE009C0D6B /* HeaderTableViewCell.xib */; };
 		A1E5D87020D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D86F20D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift */; };
 		A1E5D87520D1A06C002DA442 /* CollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D87420D1A06C002DA442 /* CollectionViewAdapter.swift */; };
 		A1E5D87920D1A0E2002DA442 /* IntegerArrayCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5D87820D1A0E2002DA442 /* IntegerArrayCollectionView.swift */; };
@@ -176,6 +177,7 @@
 		A1DD1F2B20D18E45001DFA5E /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		A1DD1F2F20D18E50001DFA5E /* ErrorCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCatcher.swift; sourceTree = "<group>"; };
 		A1DD1F3220D18E66001DFA5E /* IntegerFinderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerFinderAPI.swift; sourceTree = "<group>"; };
+		A1DEE35720D76FBE009C0D6B /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		A1E5D86F20D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveIntegerArrayUseCase.swift; sourceTree = "<group>"; };
 		A1E5D87420D1A06C002DA442 /* CollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewAdapter.swift; sourceTree = "<group>"; };
 		A1E5D87820D1A0E2002DA442 /* IntegerArrayCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerArrayCollectionView.swift; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 		A18AF57420D3D0C2004652F7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A1DEE35720D76FBE009C0D6B /* HeaderTableViewCell.xib */,
 				A18AF57520D3D2D2004652F7 /* HistoryTableViewCell.xib */,
 				A18AF57720D3D67D004652F7 /* HistoryTableViewCell.swift */,
 			);
@@ -903,6 +906,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DD1EEF20D18BBF001DFA5E /* LaunchScreen.storyboard in Resources */,
+				A1DEE35820D76FBE009C0D6B /* HeaderTableViewCell.xib in Resources */,
 				A18AF5A120D44CA3004652F7 /* Localizable.strings in Resources */,
 				A18AF57620D3D2D2004652F7 /* HistoryTableViewCell.xib in Resources */,
 				A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */,
