@@ -47,15 +47,6 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
         
         showActivityIndicatorView(at: integerArrayCollectionView)
         presenter.retrieveIntegerArray()
-        
-        let action = {
-            print("dismissss")
-        }
-        let buttonTuple: CustomAlertButtonTuple = (text: "Teste", theme: DefaultAlertButton(), action: action)
-        alertBuilder = alertBuilder.setButtons(with: [buttonTuple])
-        let viewcontroller = alertBuilder.build()
-        
-        present(viewcontroller, animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -75,6 +66,11 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
     
     @IBAction func matchButtonTouchedUpInside(_ sender: UIButton) {
         presenter.testMatch(numberTextField.text)
+//        let action = { }
+//        let buttonTuple: CustomAlertButtonTuple = (text: "Teste", theme: DefaultAlertButton(), action: action)
+//        alertBuilder = alertBuilder.setButtons(with: [buttonTuple])
+//        let viewcontroller = alertBuilder.build()
+//        present(viewcontroller, animated: true, completion: nil)
     }
     
     @IBAction func redefineIntegerArrayButtonTouchedUpInside(_ sender: UIButton) {

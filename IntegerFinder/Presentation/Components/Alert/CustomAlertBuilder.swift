@@ -30,6 +30,9 @@ class CustomAlertBuilder {
         buttonsActions = []
         
         createMainView(with: alertTheme)
+        
+        viewController.modalPresentationStyle = .overCurrentContext
+        viewController.modalTransitionStyle = .crossDissolve
     }
     
     func setButtons(with tuples: [CustomAlertButtonTuple]) -> CustomAlertBuilder {
@@ -76,8 +79,8 @@ extension CustomAlertBuilder {
         // constraints
         
         view.setLeftConstraint(25, for: contentView, relatedTo: view)
-        view.setCenterXConstraint(for: contentView, relatedTo: view)
-        view.setCenterYConstraint(for: contentView, relatedTo: view)
+        contentView.setCenterXConstraint(relatedTo: view)
+        contentView.setCenterYConstraint(relatedTo: view)
     }
     
     private func createButton(with tuple: CustomAlertButtonTuple, and tag: Int) -> UIButton {

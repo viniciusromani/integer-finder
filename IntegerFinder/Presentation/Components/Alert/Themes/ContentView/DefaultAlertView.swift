@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct DefaultAlertView: CustomAlertViewTheme {
-    var overlayColor: UIColor? = UIColor.clear
+    var overlayColor: UIColor? = UIColor(white: 0, alpha: 0.7)
     var backgroundColor: UIColor? = UIColor.white
     var borderRadius: CGFloat? = CGFloat(8)
     var borderWidth: CGFloat? = nil

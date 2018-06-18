@@ -35,25 +35,10 @@ extension ActivityIndicatorView {
     }
     
     private func setActivityIndicatorConstraints() {
-        setWidthConstraint(40)
-        setHeightConstraint(40)
-
-        var constraint = NSLayoutConstraint(item: activityIndicator,
-                                            attribute: .centerX,
-                                            relatedBy: .equal,
-                                            toItem: self,
-                                            attribute: .centerX,
-                                            multiplier: 1,
-                                            constant: 0)
-        addConstraint(constraint)
-        constraint = NSLayoutConstraint(item: activityIndicator,
-                                        attribute: .centerY,
-                                        relatedBy: .equal,
-                                        toItem: self,
-                                        attribute: .centerY,
-                                        multiplier: 1,
-                                        constant: 0)
-        addConstraint(constraint)
+        activityIndicator.setWidthConstraint(40)
+        activityIndicator.setHeightConstraint(40)
+        activityIndicator.setCenterXConstraint(relatedTo: self)
+        activityIndicator.setCenterYConstraint(relatedTo: self)
     }
 }
 

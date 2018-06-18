@@ -75,8 +75,8 @@ extension UIView {
         relatedView?.addConstraint(rightConstraint)
     }
     
-    func setCenterXConstraint(for view: UIView, relatedTo relatedView: UIView?) {
-        let centerXConstraint = NSLayoutConstraint(item: view,
+    func setCenterXConstraint(relatedTo relatedView: UIView?) {
+        let centerXConstraint = NSLayoutConstraint(item: self,
                                                    attribute: .centerX,
                                                    relatedBy: .equal,
                                                    toItem: relatedView,
@@ -86,8 +86,8 @@ extension UIView {
         relatedView?.addConstraint(centerXConstraint)
     }
     
-    func setCenterYConstraint(for view: UIView, relatedTo relatedView: UIView?) {
-        let centerYConstraint = NSLayoutConstraint(item: view,
+    func setCenterYConstraint(relatedTo relatedView: UIView?) {
+        let centerYConstraint = NSLayoutConstraint(item: self,
                                                    attribute: .centerY,
                                                    relatedBy: .equal,
                                                    toItem: relatedView,
