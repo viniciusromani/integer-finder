@@ -27,11 +27,11 @@ extension ControllableView where Self: UIViewController {
     
     private func findEmptyStateView(at viewToFind: UIView) -> UIView? {
         for subview in viewToFind.subviews {
-            if subview is EmptyStateView {
-                return subview
-            }
+            let emptyStateView = subview.subviews.first { $0 is EmptyStateView } as? EmptyStateView
             
-            if subview.subviews.count > 0 {
+            if let emptyState = emptyStateView {
+                return emptyState
+            } else {
                 return findEmptyStateView(at: subview)
             }
         }

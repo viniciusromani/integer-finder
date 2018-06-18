@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum APIEnvironment {
     case production
@@ -14,4 +15,11 @@ enum APIEnvironment {
 
 struct NetworkSettings {
     static let environment: APIEnvironment = .production
+    
+    static let requestManager: Alamofire.SessionManager = {
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
+        configuration.timeoutIntervalForRequest = 20
+        return Alamofire.SessionManager(configuration: configuration)
+    }()
 }

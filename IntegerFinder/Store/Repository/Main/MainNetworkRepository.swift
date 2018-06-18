@@ -12,7 +12,7 @@ import RxSwift
 
 struct MainNetworkRepository: MainRepository {
     
-    let provider = MoyaProvider<IntegerFinderAPI>()
+    let provider = MoyaProvider<IntegerFinderAPI>(manager: NetworkSettings.requestManager)
     
     func fetchIntegerArray() -> Observable<[Int]> {
         return provider.rx.request(.fetchIntegerArray)

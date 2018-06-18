@@ -65,6 +65,8 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
     }
     
     @IBAction func redefineIntegerArrayButtonTouchedUpInside(_ sender: UIButton) {
+//        showActivityIndicatorView(at: integerArrayCollectionView)
+        prepareCollectionToShowResult()
         showActivityIndicatorView(at: integerArrayCollectionView)
         presenter.retrieveIntegerArray()
     }
@@ -81,12 +83,12 @@ extension MainScreenViewController: MainScreenViewProtocol {
     }
     
     func display(viewModel integerArrayViewModel: [IntegerArrayViewModel]) {
-        hideActivityIndicatorView()
+        prepareCollectionToShowResult()
         adapter.setDataSet(integerArrayViewModel)
     }
     
     func displayEmptyState(withMessage message: String) {
-        hideActivityIndicatorView()
+        prepareCollectionToShowResult()
         showEmptyState(withMessage: message, at: integerArrayCollectionView)
     }
     
@@ -94,3 +96,12 @@ extension MainScreenViewController: MainScreenViewProtocol {
         numberTextField.errorMessage = message
     }
 }
+
+extension MainScreenViewController {
+    private func prepareCollectionToShowResult() {
+        hideEmptyState()
+        hideActivityIndicatorView()
+        adapter.setDataSet([])
+    }
+}
+
