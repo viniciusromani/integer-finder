@@ -23,8 +23,6 @@ extension LoadableView where Self: UIViewController {
     
     func hideActivityIndicatorView() {
         guard let activityIndicatorView = findActivityIndicatorView(at: view) else { return }
-        
-        print("indicator view \(activityIndicatorView)")
         activityIndicatorView.removeFromSuperview()
     }
     
