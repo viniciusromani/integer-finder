@@ -54,6 +54,7 @@
 		A18AF5A120D44CA3004652F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18AF5A320D44CA3004652F7 /* Localizable.strings */; };
 		A18AF5A920D45B7B004652F7 /* ControllableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF5A820D45B7B004652F7 /* ControllableView.swift */; };
 		A18AF5AB20D45BB9004652F7 /* ControllableView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AF5AA20D45BB9004652F7 /* ControllableView+ViewController.swift */; };
+		A1DACFF520D859B300301418 /* IntegerValidatorUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DACFF420D859B300301418 /* IntegerValidatorUseCaseTests.swift */; };
 		A1DD1EE520D18BBE001DFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */; };
 		A1DD1EEA20D18BBE001DFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EE820D18BBE001DFA5E /* Main.storyboard */; };
 		A1DD1EEC20D18BBF001DFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1EEB20D18BBF001DFA5E /* Assets.xcassets */; };
@@ -159,6 +160,7 @@
 		A18AF5A620D44DAB004652F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		A18AF5A820D45B7B004652F7 /* ControllableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllableView.swift; sourceTree = "<group>"; };
 		A18AF5AA20D45BB9004652F7 /* ControllableView+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllableView+ViewController.swift"; sourceTree = "<group>"; };
+		A1DACFF420D859B300301418 /* IntegerValidatorUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerValidatorUseCaseTests.swift; sourceTree = "<group>"; };
 		A1DD1EE120D18BBE001DFA5E /* IntegerFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegerFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DD1EE420D18BBE001DFA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DD1EE920D18BBE001DFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 				A11E5B8F20D57B5800FD3FDD /* Mapper */,
 				A11E5B8B20D572AC00FD3FDD /* RetrieveIntegerArrayUseCaseTests.swift */,
 				A11E5B8D20D572BE00FD3FDD /* IntegerMatcherUseCaseTests.swift */,
+				A1DACFF420D859B300301418 /* IntegerValidatorUseCaseTests.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -1035,6 +1038,7 @@
 				A11E5B8C20D572AC00FD3FDD /* RetrieveIntegerArrayUseCaseTests.swift in Sources */,
 				A11E5B8320D569AD00FD3FDD /* IntParse.swift in Sources */,
 				A11E5B8E20D572BE00FD3FDD /* IntegerMatcherUseCaseTests.swift in Sources */,
+				A1DACFF520D859B300301418 /* IntegerValidatorUseCaseTests.swift in Sources */,
 				A11E5B7E20D5493300FD3FDD /* MainRepositoryTests.swift in Sources */,
 				A11E5B7A20D5445B00FD3FDD /* EndpointTests.swift in Sources */,
 				A11E5B9920D58FE400FD3FDD /* IntegerArrayViewModelTests.swift in Sources */,
