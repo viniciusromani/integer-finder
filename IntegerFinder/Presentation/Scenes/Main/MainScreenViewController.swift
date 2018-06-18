@@ -36,6 +36,10 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
     @IBOutlet weak var integerArrayCollectionView: UICollectionView!
     @IBOutlet weak var numberTextField: SkyFloatingLabelTextField!
     
+    // Variables
+    
+    private var alertBuilder = CustomAlertBuilder()
+    
     // View life cycle
     
     override func viewDidLoad() {
@@ -43,6 +47,15 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
         
         showActivityIndicatorView(at: integerArrayCollectionView)
         presenter.retrieveIntegerArray()
+        
+        let action = {
+            print("dismissss")
+        }
+        let buttonTuple: CustomAlertButtonTuple = (text: "Teste", theme: DefaultAlertButton(), action: action)
+        alertBuilder = alertBuilder.setButtons(with: [buttonTuple])
+        let viewcontroller = alertBuilder.build()
+        
+        present(viewcontroller, animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3BE4EF84EEE24D35A3B9B4E1 /* Pods_IntegerFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F7F8976C03CD9D1820DC27 /* Pods_IntegerFinderTests.framework */; };
+		A117ED5F20D732FF00728827 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED5E20D732FF00728827 /* CustomAlertView.swift */; };
+		A117ED6220D7387000728827 /* CustomAlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6120D7387000728827 /* CustomAlertBuilder.swift */; };
+		A117ED6720D7411000728827 /* CustomAlertButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6620D7411000728827 /* CustomAlertButtonTheme.swift */; };
+		A117ED6920D741FA00728827 /* DefaultAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6820D741FA00728827 /* DefaultAlertButton.swift */; };
+		A117ED6B20D744A000728827 /* CustomAlertViewTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6A20D744A000728827 /* CustomAlertViewTheme.swift */; };
+		A117ED6D20D7455800728827 /* DefaultAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6C20D7455800728827 /* DefaultAlertView.swift */; };
 		A11E5B4620D4B52900FD3FDD /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */; };
 		A11E5B4B20D4B9D100FD3FDD /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */; };
 		A11E5B4D20D4B9E600FD3FDD /* LoadableView+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */; };
@@ -100,6 +106,12 @@
 		09F7F8976C03CD9D1820DC27 /* Pods_IntegerFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C02096B34780631C371A308 /* Pods-IntegerFinder-IntegerFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder-IntegerFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder-IntegerFinderTests/Pods-IntegerFinder-IntegerFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		59A28D57EECAB1A4510DAF26 /* Pods_IntegerFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A117ED5E20D732FF00728827 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		A117ED6120D7387000728827 /* CustomAlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertBuilder.swift; sourceTree = "<group>"; };
+		A117ED6620D7411000728827 /* CustomAlertButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertButtonTheme.swift; sourceTree = "<group>"; };
+		A117ED6820D741FA00728827 /* DefaultAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertButton.swift; sourceTree = "<group>"; };
+		A117ED6A20D744A000728827 /* CustomAlertViewTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewTheme.swift; sourceTree = "<group>"; };
+		A117ED6C20D7455800728827 /* DefaultAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertView.swift; sourceTree = "<group>"; };
 		A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
 		A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadableView+UIViewController.swift"; sourceTree = "<group>"; };
@@ -234,6 +246,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A117ED6020D7385F00728827 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				A117ED6320D740DB00728827 /* Themes */,
+				A117ED6120D7387000728827 /* CustomAlertBuilder.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		A117ED6320D740DB00728827 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				A117ED6520D740F400728827 /* ContentView */,
+				A117ED6420D740EB00728827 /* Button */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		A117ED6420D740EB00728827 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A117ED6620D7411000728827 /* CustomAlertButtonTheme.swift */,
+				A117ED6820D741FA00728827 /* DefaultAlertButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		A117ED6520D740F400728827 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				A117ED6A20D744A000728827 /* CustomAlertViewTheme.swift */,
+				A117ED6C20D7455800728827 /* DefaultAlertView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
 		A11E5B4920D4B9BF00FD3FDD /* Loadable */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,18 +304,12 @@
 		A11E5B5320D508CD00FD3FDD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A11E5B6620D538F400FD3FDD /* Alert */,
+				A117ED6020D7385F00728827 /* Alert */,
 				A18AF59820D44548004652F7 /* EmptyStateView.swift */,
 				A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */,
+				A117ED5E20D732FF00728827 /* CustomAlertView.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		A11E5B6620D538F400FD3FDD /* Alert */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Alert;
 			sourceTree = "<group>";
 		};
 		A11E5B6E20D542E600FD3FDD /* IntegerFinderTests */ = {
@@ -1009,6 +1051,7 @@
 				A1DD1F1F20D18D76001DFA5E /* MainRepository.swift in Sources */,
 				A1FE0EAA20D1B3B1003D6ADB /* RepositoryDependencyInjection.swift in Sources */,
 				A11E5B5220D4C61300FD3FDD /* UIView+NSLayoutConstraint.swift in Sources */,
+				A117ED6D20D7455800728827 /* DefaultAlertView.swift in Sources */,
 				A18AF57320D3D0BC004652F7 /* HistoryTableView.swift in Sources */,
 				A18AF56C20D3D082004652F7 /* HistoryPresenter.swift in Sources */,
 				A1DD1F2220D18D8E001DFA5E /* GenericEntityMapper.swift in Sources */,
@@ -1017,10 +1060,13 @@
 				A18AF58C20D43CA2004652F7 /* UIViewController+NavigationBar.swift in Sources */,
 				A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */,
 				A18AF5A920D45B7B004652F7 /* ControllableView.swift in Sources */,
+				A117ED5F20D732FF00728827 /* CustomAlertView.swift in Sources */,
+				A117ED6920D741FA00728827 /* DefaultAlertButton.swift in Sources */,
 				A11E5B4620D4B52900FD3FDD /* ActivityIndicatorView.swift in Sources */,
 				A18AF58320D3DDD8004652F7 /* MatchEntity.swift in Sources */,
 				A1DD1F2820D18DAC001DFA5E /* NetworkSettings.swift in Sources */,
 				A1DD1F3020D18E50001DFA5E /* ErrorCatcher.swift in Sources */,
+				A117ED6B20D744A000728827 /* CustomAlertViewTheme.swift in Sources */,
 				A18AF57B20D3D7C6004652F7 /* HistoryViewModel.swift in Sources */,
 				A18AF58020D3DD99004652F7 /* MatchModel+Mappable.swift in Sources */,
 				A1E5D88E20D1AC70002DA442 /* MainScreenRouter.swift in Sources */,
@@ -1032,11 +1078,13 @@
 				A1E5D87520D1A06C002DA442 /* CollectionViewAdapter.swift in Sources */,
 				A1E5D88820D1AC3C002DA442 /* MainScreenViewController.swift in Sources */,
 				A18AF59120D43D90004652F7 /* DefaultNavigationBarTheme.swift in Sources */,
+				A117ED6220D7387000728827 /* CustomAlertBuilder.swift in Sources */,
 				A1FE0EA820D1B30E003D6ADB /* UseCaseDependencyInjection.swift in Sources */,
 				A18AF58F20D43D54004652F7 /* NavigationBarTheme.swift in Sources */,
 				A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */,
 				A18AF56E20D3D08B004652F7 /* HistoryRouter.swift in Sources */,
 				A1FE0EB220D291CC003D6ADB /* GenericViewModelMapper.swift in Sources */,
+				A117ED6720D7411000728827 /* CustomAlertButtonTheme.swift in Sources */,
 				A1E5D88C20D1AC5D002DA442 /* MainScreenConfigurator.swift in Sources */,
 				A18AF57820D3D67D004652F7 /* HistoryTableViewCell.swift in Sources */,
 				A1DD1F2620D18D9F001DFA5E /* Int+Mappable.swift in Sources */,

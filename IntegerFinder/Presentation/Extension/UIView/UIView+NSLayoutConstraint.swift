@@ -9,26 +9,26 @@
 import UIKit
 
 extension UIView {
-    func setWidthConstraint(_ constraintValue: CGFloat, for view: UIView) {
-        let widthConstraint = NSLayoutConstraint(item: view,
+    func setWidthConstraint(_ constraintValue: CGFloat) {
+        let widthConstraint = NSLayoutConstraint(item: self,
                                                  attribute: .width,
                                                  relatedBy: .equal,
                                                  toItem: nil,
                                                  attribute: .notAnAttribute,
                                                  multiplier: 1,
                                                  constant: constraintValue)
-        view.addConstraint(widthConstraint)
+        self.addConstraint(widthConstraint)
     }
     
-    func setHeightConstraint(_ constraintValue: CGFloat, for view: UIView) {
-        let heightConstraint = NSLayoutConstraint(item: view,
+    func setHeightConstraint(_ constraintValue: CGFloat) {
+        let heightConstraint = NSLayoutConstraint(item: self,
                                                   attribute: .height,
                                                   relatedBy: .equal,
                                                   toItem: nil,
                                                   attribute: .notAnAttribute,
                                                   multiplier: 1,
                                                   constant: constraintValue)
-        view.addConstraint(heightConstraint)
+        self.addConstraint(heightConstraint)
     }
     
     func setTopConstraint(_ constraintValue: CGFloat, for view: UIView, relatedTo relatedView: UIView?) {
@@ -95,5 +95,13 @@ extension UIView {
                                                    multiplier: 1,
                                                    constant: 0)
         relatedView?.addConstraint(centerYConstraint)
+    }
+    
+    func setConstraints(with format: String, for views: [String: Any]) {
+        let constraints = NSLayoutConstraint.constraints(withVisualFormat: format,
+                                                         options: [],
+                                                         metrics: nil,
+                                                         views: views)
+        self.addConstraints(constraints)
     }
 }
