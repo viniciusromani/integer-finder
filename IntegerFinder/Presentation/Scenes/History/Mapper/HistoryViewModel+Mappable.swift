@@ -16,5 +16,6 @@ extension HistoryViewModel: MappableViewModel {
         status = model.wasFound ?
             R.string.localizable.found():
             R.string.localizable.notFound()
+        sequence = model.integerArray
     }
 }

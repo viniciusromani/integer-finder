@@ -11,4 +11,5 @@ import Foundation
 struct HistoryViewModel {
     let number: String
     let status: String
+    let sequence: [Int]
 }

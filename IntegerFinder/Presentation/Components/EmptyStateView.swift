@@ -50,23 +50,8 @@ extension EmptyStateView {
     }
     
     private func setTitleLabelConstraints() {
-        setLeftConstraint(25, for: titleLabel, relatedTo: self)
-        
-        var constraint = NSLayoutConstraint(item: titleLabel,
-                                            attribute: .centerX,
-                                            relatedBy: .equal,
-                                            toItem: self,
-                                            attribute: .centerX,
-                                            multiplier: 1,
-                                            constant: 0)
-        addConstraint(constraint)
-        constraint = NSLayoutConstraint(item: titleLabel,
-                                        attribute: .centerY,
-                                        relatedBy: .equal,
-                                        toItem: self,
-                                        attribute: .centerY,
-                                        multiplier: 1,
-                                        constant: 0)
-        addConstraint(constraint)
+        titleLabel.setLeftConstraint(25, relatedTo: self)
+        titleLabel.setCenterXConstraint(relatedTo: self)
+        titleLabel.setCenterYConstraint(relatedTo: self)
     }
 }

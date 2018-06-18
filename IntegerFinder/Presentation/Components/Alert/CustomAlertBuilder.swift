@@ -20,6 +20,7 @@ class CustomAlertBuilder {
     fileprivate var contentViews: [String: UIView] = [:]
     private var sortedContentViews: [(identifier: String, view: UIView)] = []
     private var buttonsActions: [(tag: Int, action: CustomAlertButtonAction)] = []
+    private var adapter: IntegerArrayAdapter?
     
     init(with alertTheme: CustomAlertViewTheme = DefaultAlertView()) {
         viewController = UIViewController()
@@ -33,6 +34,18 @@ class CustomAlertBuilder {
         
         viewController.modalPresentationStyle = .overCurrentContext
         viewController.modalTransitionStyle = .crossDissolve
+    }
+    
+    func setIntegerArrayCollectionView(with sequence: [Int]) -> CustomAlertBuilder {
+        let collectionView = createCollectionView()
+        setupCollectionView(collectionView)
+        
+        contentViews["collectionView"] = collectionView
+        sortedContentViews.append((identifier: "collectionView", view: collectionView))
+        
+        setupIntegerArrayCollectionViewAdapter(with: sequence, and: collectionView)
+        
+        return self
     }
     
     func setButtons(with tuples: [CustomAlertButtonTuple]) -> CustomAlertBuilder {
@@ -78,7 +91,7 @@ extension CustomAlertBuilder {
         
         // constraints
         
-        view.setLeftConstraint(25, for: contentView, relatedTo: view)
+        contentView.setLeftConstraint(25, relatedTo: view)
         contentView.setCenterXConstraint(relatedTo: view)
         contentView.setCenterYConstraint(relatedTo: view)
     }
@@ -110,6 +123,14 @@ extension CustomAlertBuilder {
         
         return button
     }
+    
+    private func createCollectionView() -> UICollectionView {
+        let collectionView = UICollectionView.init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.clipsToBounds = true
+        collectionView.backgroundColor = UIColor.white
+        return collectionView
+    }
 }
 
 // MARK: - Actions
@@ -131,6 +152,18 @@ extension CustomAlertBuilder {
         contentView.setConstraints(with: "H:|-12-[button]-12-|", for: ["button": button])
     }
     
+    private func setupCollectionView(_ collectionView: UICollectionView) {
+        contentView.addSubview(collectionView)
+        contentView.setConstraints(with: "H:|-20-[collectionView]-20-|", for: ["collectionView": collectionView])
+        contentView.setHeightConstraint(380)
+    }
+    
+    private func setupIntegerArrayCollectionViewAdapter(with sequence: [Int], and collectionView: UICollectionView) {
+        adapter = IntegerArrayAdapter(collectionView: collectionView)
+        let x = IntegerArrayViewModel.array(mapping: sequence)
+        adapter?.setDataSet(x)
+    }
+    
     private func setupVerticalConstraints() {
         let format = buildVerticalConstraintString()
         contentView.setConstraints(with: format, for: contentViews)
@@ -145,7 +178,4 @@ extension CustomAlertBuilder {
         return string
     }
 }
-
-
-
 

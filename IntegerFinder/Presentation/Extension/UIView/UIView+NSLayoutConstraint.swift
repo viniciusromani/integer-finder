@@ -31,8 +31,8 @@ extension UIView {
         self.addConstraint(heightConstraint)
     }
     
-    func setTopConstraint(_ constraintValue: CGFloat, for view: UIView, relatedTo relatedView: UIView?) {
-        let topConstraint = NSLayoutConstraint(item: view,
+    func setTopConstraint(_ constraintValue: CGFloat, relatedTo relatedView: UIView?) {
+        let topConstraint = NSLayoutConstraint(item: self,
                                                attribute: .top,
                                                relatedBy: .equal,
                                                toItem: relatedView,
@@ -42,8 +42,8 @@ extension UIView {
         relatedView?.addConstraint(topConstraint)
     }
     
-    func setBottomConstraint(_ constraintValue: CGFloat, for view: UIView, relatedTo relatedView: UIView?) {
-        let bottomConstraint = NSLayoutConstraint(item: view,
+    func setBottomConstraint(_ constraintValue: CGFloat, relatedTo relatedView: UIView?) {
+        let bottomConstraint = NSLayoutConstraint(item: self,
                                                   attribute: .bottom,
                                                   relatedBy: .equal,
                                                   toItem: relatedView,
@@ -53,8 +53,8 @@ extension UIView {
         relatedView?.addConstraint(bottomConstraint)
     }
     
-    func setLeftConstraint(_ constraintValue: CGFloat, for view: UIView, relatedTo relatedView: UIView?) {
-        let leftConstraint = NSLayoutConstraint(item: view,
+    func setLeftConstraint(_ constraintValue: CGFloat, relatedTo relatedView: UIView?) {
+        let leftConstraint = NSLayoutConstraint(item: self,
                                                 attribute: .left,
                                                 relatedBy: .equal,
                                                 toItem: relatedView,
@@ -64,8 +64,8 @@ extension UIView {
         relatedView?.addConstraint(leftConstraint)
     }
     
-    func setRightConstraint(_ constraintValue: CGFloat, for view: UIView, relatedTo relatedView: UIView?) {
-        let rightConstraint = NSLayoutConstraint(item: view,
+    func setRightConstraint(_ constraintValue: CGFloat, relatedTo relatedView: UIView?) {
+        let rightConstraint = NSLayoutConstraint(item: self,
                                                  attribute: .right,
                                                  relatedBy: .equal,
                                                  toItem: relatedView,

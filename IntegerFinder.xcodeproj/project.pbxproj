@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3BE4EF84EEE24D35A3B9B4E1 /* Pods_IntegerFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F7F8976C03CD9D1820DC27 /* Pods_IntegerFinderTests.framework */; };
-		A117ED5F20D732FF00728827 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED5E20D732FF00728827 /* CustomAlertView.swift */; };
 		A117ED6220D7387000728827 /* CustomAlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6120D7387000728827 /* CustomAlertBuilder.swift */; };
 		A117ED6720D7411000728827 /* CustomAlertButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6620D7411000728827 /* CustomAlertButtonTheme.swift */; };
 		A117ED6920D741FA00728827 /* DefaultAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6820D741FA00728827 /* DefaultAlertButton.swift */; };
@@ -108,7 +107,6 @@
 		09F7F8976C03CD9D1820DC27 /* Pods_IntegerFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C02096B34780631C371A308 /* Pods-IntegerFinder-IntegerFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegerFinder-IntegerFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntegerFinder-IntegerFinderTests/Pods-IntegerFinder-IntegerFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		59A28D57EECAB1A4510DAF26 /* Pods_IntegerFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntegerFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A117ED5E20D732FF00728827 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		A117ED6120D7387000728827 /* CustomAlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertBuilder.swift; sourceTree = "<group>"; };
 		A117ED6620D7411000728827 /* CustomAlertButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertButtonTheme.swift; sourceTree = "<group>"; };
 		A117ED6820D741FA00728827 /* DefaultAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertButton.swift; sourceTree = "<group>"; };
@@ -311,7 +309,6 @@
 				A117ED6020D7385F00728827 /* Alert */,
 				A18AF59820D44548004652F7 /* EmptyStateView.swift */,
 				A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */,
-				A117ED5E20D732FF00728827 /* CustomAlertView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1067,7 +1064,6 @@
 				A18AF58C20D43CA2004652F7 /* UIViewController+NavigationBar.swift in Sources */,
 				A1FE0EAE20D1BCD1003D6ADB /* SwinjectStoryboard+Setup.swift in Sources */,
 				A18AF5A920D45B7B004652F7 /* ControllableView.swift in Sources */,
-				A117ED5F20D732FF00728827 /* CustomAlertView.swift in Sources */,
 				A117ED6920D741FA00728827 /* DefaultAlertButton.swift in Sources */,
 				A11E5B4620D4B52900FD3FDD /* ActivityIndicatorView.swift in Sources */,
 				A18AF58320D3DDD8004652F7 /* MatchEntity.swift in Sources */,

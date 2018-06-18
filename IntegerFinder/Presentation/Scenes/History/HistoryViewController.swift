@@ -62,7 +62,9 @@ extension HistoryViewController: HistoryAdapterViewProtocol {
         let buttonTuple: CustomAlertButtonTuple = (text: R.string.localizable.close(),
                                                    theme: DefaultAlertButton(),
                                                    action: action)
-        alertBuilder = alertBuilder.setButtons(with: [buttonTuple])
+        alertBuilder = alertBuilder
+            .setIntegerArrayCollectionView(with: historyViewModel.sequence)
+            .setButtons(with: [buttonTuple])
         let viewcontroller = alertBuilder.build()
         present(viewcontroller, animated: true, completion: nil)
     }
