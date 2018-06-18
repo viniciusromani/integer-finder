@@ -14,6 +14,7 @@
 		A117ED6920D741FA00728827 /* DefaultAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6820D741FA00728827 /* DefaultAlertButton.swift */; };
 		A117ED6B20D744A000728827 /* CustomAlertViewTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6A20D744A000728827 /* CustomAlertViewTheme.swift */; };
 		A117ED6D20D7455800728827 /* DefaultAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6C20D7455800728827 /* DefaultAlertView.swift */; };
+		A117ED6F20D768B200728827 /* IntegerValidatorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117ED6E20D768B200728827 /* IntegerValidatorUseCase.swift */; };
 		A11E5B4620D4B52900FD3FDD /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */; };
 		A11E5B4B20D4B9D100FD3FDD /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */; };
 		A11E5B4D20D4B9E600FD3FDD /* LoadableView+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */; };
@@ -112,6 +113,7 @@
 		A117ED6820D741FA00728827 /* DefaultAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertButton.swift; sourceTree = "<group>"; };
 		A117ED6A20D744A000728827 /* CustomAlertViewTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewTheme.swift; sourceTree = "<group>"; };
 		A117ED6C20D7455800728827 /* DefaultAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertView.swift; sourceTree = "<group>"; };
+		A117ED6E20D768B200728827 /* IntegerValidatorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerValidatorUseCase.swift; sourceTree = "<group>"; };
 		A11E5B4520D4B52900FD3FDD /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		A11E5B4A20D4B9D100FD3FDD /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
 		A11E5B4C20D4B9E600FD3FDD /* LoadableView+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadableView+UIViewController.swift"; sourceTree = "<group>"; };
@@ -659,6 +661,7 @@
 			children = (
 				A1E5D86F20D19F52002DA442 /* RetrieveIntegerArrayUseCase.swift */,
 				A18AF54A20D3449C004652F7 /* IntegerMatcherUseCase.swift */,
+				A117ED6E20D768B200728827 /* IntegerValidatorUseCase.swift */,
 			);
 			path = "Use Case";
 			sourceTree = "<group>";
@@ -1083,6 +1086,7 @@
 				A18AF58F20D43D54004652F7 /* NavigationBarTheme.swift in Sources */,
 				A18AF54B20D3449C004652F7 /* IntegerMatcherUseCase.swift in Sources */,
 				A18AF56E20D3D08B004652F7 /* HistoryRouter.swift in Sources */,
+				A117ED6F20D768B200728827 /* IntegerValidatorUseCase.swift in Sources */,
 				A1FE0EB220D291CC003D6ADB /* GenericViewModelMapper.swift in Sources */,
 				A117ED6720D7411000728827 /* CustomAlertButtonTheme.swift in Sources */,
 				A1E5D88C20D1AC5D002DA442 /* MainScreenConfigurator.swift in Sources */,

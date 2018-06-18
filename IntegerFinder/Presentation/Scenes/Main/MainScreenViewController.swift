@@ -18,6 +18,7 @@ protocol MainScreenViewProtocol: class {
     func display(viewModel integerArrayViewModel: [IntegerArrayViewModel])
     func showToast(with message: String)
     func displayEmptyState(withMessage message: String)
+    func displayTypedNumberValidation(withMessage message: String?)
 }
 
 class MainScreenViewController: UIViewController, LoadableView, ControllableView {
@@ -65,7 +66,7 @@ class MainScreenViewController: UIViewController, LoadableView, ControllableView
     // IBActions
     
     @IBAction func matchButtonTouchedUpInside(_ sender: UIButton) {
-        presenter.testMatch(numberTextField.text)
+        presenter.validate(typedNumber: numberTextField.text)
 //        let action = { }
 //        let buttonTuple: CustomAlertButtonTuple = (text: "Teste", theme: DefaultAlertButton(), action: action)
 //        alertBuilder = alertBuilder.setButtons(with: [buttonTuple])
@@ -95,5 +96,9 @@ extension MainScreenViewController: MainScreenViewProtocol {
     func displayEmptyState(withMessage message: String) {
         hideActivityIndicatorView()
         showEmptyState(withMessage: message, at: integerArrayCollectionView)
+    }
+    
+    func displayTypedNumberValidation(withMessage message: String?) {
+        numberTextField.errorMessage = message
     }
 }

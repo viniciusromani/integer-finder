@@ -19,5 +19,9 @@ struct UseCaseDependencyInjection {
         container.register(IntegerMatcherArrayUseCase.self) { (resolver) -> IntegerMatcherArrayUseCase in
             return IntegerMatcherArrayUseCase()
         }
+        
+        container.register(IntegerValidatorUseCase.self) { (resolver) -> IntegerValidatorUseCase in
+            return IntegerValidatorUseCase()
+        }
     }
 }

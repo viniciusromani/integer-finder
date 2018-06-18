@@ -132,8 +132,12 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 5 localization keys.
     struct localizable {
+      /// en translation: -197...197
+      /// 
+      /// Locales: en, pt
+      static let numberNotInRange = Rswift.StringResource(key: "number-not-in-range", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
       /// en translation: Found
       /// 
       /// Locales: en, pt
@@ -150,6 +154,13 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, pt
       static let noMatches = Rswift.StringResource(key: "no-matches", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt"], comment: nil)
+      
+      /// en translation: -197...197
+      /// 
+      /// Locales: en, pt
+      static func numberNotInRange(_: Void = ()) -> String {
+        return NSLocalizedString("number-not-in-range", bundle: R.hostingBundle, comment: "")
+      }
       
       /// en translation: Found
       /// 

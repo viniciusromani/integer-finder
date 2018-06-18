@@ -16,9 +16,10 @@ protocol MainScreenPresenterProtocol: class {
     
     var retrieveIntegerArrayUseCase: RetrieveIntegerArrayUseCase! { get set }
     var integerMatcherUseCase: IntegerMatcherArrayUseCase! { get set }
+    var validatorUseCase: IntegerValidatorUseCase! { get set }
     
     func retrieveIntegerArray()
-    func testMatch(_ stringValue: String?)
+    func validate(typedNumber number: String?)
 }
 
 class MainScreenPresenter: MainScreenPresenterProtocol {
@@ -32,6 +33,7 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
     var matches: [MatchModel] = []
     var retrieveIntegerArrayUseCase: RetrieveIntegerArrayUseCase!
     var integerMatcherUseCase: IntegerMatcherArrayUseCase!
+    var validatorUseCase: IntegerValidatorUseCase!
     
     func retrieveIntegerArray() {
         retrieveIntegerArrayUseCase.retrieveIntegerArray().subscribe(onNext: { [weak self] (integerArray) in
@@ -57,7 +59,21 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
         }).disposed(by: disposeBag)
     }
     
-    func testMatch(_ stringValue: String?) {
+    func validate(typedNumber number: String?) {
+        guard let int = Int(number ?? "") else { return }
+        let result = validatorUseCase.validate(int: int)
+        let message: String? = result ? nil: R.string.localizable.numberNotInRange()
+        view.displayTypedNumberValidation(withMessage: message)
+        
+        guard result else { return }
+        testMatch(number)
+    }
+}
+
+typealias MatchModelParams = (typedValue: Int, integerArray: [Int], wasFound: Bool)
+
+extension MainScreenPresenter {
+    private func testMatch(_ stringValue: String?) {
         guard let string = stringValue, let int = Int(string) else { return }
         let result = integerMatcherUseCase.int(int, matchesInSequence: currentIntegerArray)
         let message = result ?
@@ -70,11 +86,7 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
                                       wasFound: result)
         storeMatchModel(with: params)
     }
-}
-
-typealias MatchModelParams = (typedValue: Int, integerArray: [Int], wasFound: Bool)
-
-extension MainScreenPresenter {
+    
     private func storeMatchModel(with params: MatchModelParams) {
         let matchModel = MatchModel(typedValue: params.typedValue,
                                     integerArray: params.integerArray,
