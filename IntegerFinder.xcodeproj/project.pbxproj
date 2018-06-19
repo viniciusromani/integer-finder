@@ -318,7 +318,9 @@
 		A11E5B6E20D542E600FD3FDD /* IntegerFinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				A11E5B9C20D591F100FD3FDD /* Unit */,
+				A11E5B9620D58EE000FD3FDD /* Presentation */,
+				A11E5B8A20D5729300FD3FDD /* Domain */,
+				A11E5B7820D5444600FD3FDD /* Store */,
 				A11E5B7120D542E600FD3FDD /* Info.plist */,
 			);
 			path = IntegerFinderTests;
@@ -387,16 +389,6 @@
 				A11E5B9A20D590EE00FD3FDD /* MatcherViewModelTests.swift */,
 			);
 			path = Mapper;
-			sourceTree = "<group>";
-		};
-		A11E5B9C20D591F100FD3FDD /* Unit */ = {
-			isa = PBXGroup;
-			children = (
-				A11E5B9620D58EE000FD3FDD /* Presentation */,
-				A11E5B8A20D5729300FD3FDD /* Domain */,
-				A11E5B7820D5444600FD3FDD /* Store */,
-			);
-			path = Unit;
 			sourceTree = "<group>";
 		};
 		A18AF55D20D37B7E004652F7 /* Model */ = {

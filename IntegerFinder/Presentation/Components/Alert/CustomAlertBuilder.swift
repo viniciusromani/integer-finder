@@ -40,8 +40,11 @@ class CustomAlertBuilder {
         let collectionView = createCollectionView()
         setupCollectionView(collectionView)
         
+        let collectionIdentifier = "collectionView"
         contentViews["collectionView"] = collectionView
-        sortedContentViews.append((identifier: "collectionView", view: collectionView))
+        if !sortedContentViews.contains(where: { $0.identifier == collectionIdentifier }) {
+            sortedContentViews.append((identifier: "collectionView", view: collectionView))
+        }
         
         setupIntegerArrayCollectionViewAdapter(with: sequence, and: collectionView)
         
