@@ -1,6 +1,6 @@
-# Project Title
+# Integer Finder
 
-One Paragraph of project description goes here
+This is a fun application that will fetch an array of size 16 from a web service and check whether a typed number is a sum of two elements or not.
 
 ## Getting Started
 
